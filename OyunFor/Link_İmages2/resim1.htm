@@ -1,0 +1,1898 @@
+
+<!DOCTYPE html>
+<html lang=tr>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta http-equiv=X-UA-Compatible content="IE=edge"><script>window.mod_pagespeed_start = Number(new Date());</script><script>window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>World Of WarCraft (Wow) Battle Chest CD Key Satın Al</title>
+<meta name=description content="World Of WarCraft (Wow) Battle Chest (CD Key + 30 Days) Satın Al">
+<meta name=keywords content="world of warcraft, wow, battle chest, cd key, 30 days, satın al, battle chest fiyatları">
+<base href="https://www.oyunfor.com">
+<link rel=canonical href='https://www.oyunfor.com/blizzard-oyunlari/wow-game-card'> <meta property=og:title content="World Of WarCraft (Wow) Battle Chest CD Key Satın Al"/>
+<meta property=og:type content=website />
+<meta property=og:image content="https://www.oyunfor.com/asset/img/oyunforscreenshot.jpg"/>
+<meta property=fb:admins content=970455299767392 />
+<meta property=og:site_name content=Oyunfor.com />
+<meta property=og:description content="World Of WarCraft (Wow) Battle Chest (CD Key + 30 Days) Satın Al"/>
+<meta name=twitter:card content=summary />
+<meta name=twitter:site content="@oyunfor"/>
+<meta name=twitter:title content="World Of WarCraft (Wow) Battle Chest CD Key Satın Al"/>
+<meta name=twitter:description content="World Of WarCraft (Wow) Battle Chest (CD Key + 30 Days) Satın Al"/>
+<meta name=twitter:image content="https://www.oyunfor.com/asset/img/oyunforscreenshot.jpg"/>
+<link href="https://www.oyunfor.com/asset/css/bootstrap.min.css" rel=stylesheet>
+<link href="https://www.oyunfor.com/asset/css/font-awesome-animation.min.css" rel=stylesheet>
+<link href="https://www.oyunfor.com/asset/css/style.css" rel=stylesheet>
+<link href="https://www.oyunfor.com/asset/css/flag-icon.min.css" rel=stylesheet>
+<!--[if lt IE 9]>
+    <script async src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script async src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script src="https://www.oyunfor.com/asset/js/jquery-2.2.0.min.js"></script>
+<script src="https://www.oyunfor.com/asset/js/master.js"></script>
+<script type="application/ld+json">
+            {
+                "@context":"http://schema.org",
+                "@type":"WebSite",
+                "url":"https://www.oyunfor.com",
+                "name":"Oyunfor",
+                "potentialAction":[{
+                    "@type":"SearchAction",
+                    "target":"https://www.oyunfor.com/arama?q={search_term}",
+                    "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueMaxlength": 150,
+                    "valueName": "search_term"
+                    }
+                }]
+            }
+        </script>
+<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name" : "Oyunfor.com",
+          "url" : "https://www.oyunfor.com",
+          "logo" : "https://www.oyunfor.com/asset/img/oyunfor-logo.png",
+          "email" : "mailto:info@oyunfor.com",
+          "sameAs" : [
+            "https://www.facebook.com/OyunFor/",
+            "https://twitter.com/oyunfor",
+            "https://plus.google.com/+oyunfor",
+            "https://www.youtube.com/oyunfor",
+            "https://www.linkedin.com/company/10543167",
+            "https://www.instagram.com/oyunfor/",
+            "http://www.twitch.tv/oyunfor"
+          ]
+        }
+        </script>
+<script async>var $mcGoal={'settings':{'uuid':'860e8a46d0ac33571ee093720','dc':'us13'}};(function(){var sp=document.createElement('script');sp.type='text/javascript';sp.async=true;sp.defer=true;sp.src=('https:'==document.location.protocol?'https://s3.amazonaws.com/downloads.mailchimp.com':'http://downloads.mailchimp.com')+'/js/goal.min.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sp,s);})();</script>
+<script async>_atrk_opts={atrk_acct:"YUAjm1akKd60N8",domain:"oyunfor.com",dynamic:true};(function(){var as=document.createElement('script');as.type='text/javascript';as.async=true;as.src="https://d31qbv1cthcecs.cloudfront.net/atrk.js";var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as,s);})();</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=YUAjm1akKd60N8" style=display:none height=1 width=1 alt="" data-pagespeed-url-hash=497909534 /></noscript>
+<link async rel=manifest href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+<script>var OneSignal=window.OneSignal||[];OneSignal.push(["init",{appId:"a3ef2832-a0b0-4bcc-af5b-258aba96c54d",autoRegister:true,httpPermissionRequest:{enable:true},notifyButton:{enable:false}}]);</script>
+<style>
+            .ikonblock{
+                display: block;
+                width: 75px;
+                float: left;
+                margin: 5px;
+            }
+            .textblock{
+                display: block;
+            }
+        </style>
+<style>
+            .siteSearchBar .form-control{
+                border-left:2px solid #CECECE;
+                border-bottom:2px solid #CECECE;
+                border-top:2px solid #CECECE;
+                border-right:none;
+            }
+
+            .siteSearchBar .form-control:focus{
+                border-left:2px solid #FF8D15;
+                border-bottom:2px solid #FF8D15;
+                border-top:2px solid #FF8D15;
+                border-right:none;
+                box-shadow:none;
+            }
+            .siteSearchBar .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+                background:#CECECE;
+                color: #fff;
+            }
+            .siteSearchBar .form-control:focus + .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+                background:#FF8D15;
+                color: #fff;
+            }
+            .siteSearchBar .form-control:focus, .searchlist{
+                border-color:#FF8D15;
+            }
+            .searchlist{
+                margin-top: -19px;
+                margin-left: 15px;
+                margin-right: 15px;
+                border-left: 2px solid #FF8D15;
+                border-bottom: 2px solid #FF8D15;
+                border-right: 2px solid #FF8D15;
+                position: absolute;
+                padding: 10px;
+                background: #fff;
+                width: calc(100% - 85px);
+                z-index: 999999;
+                border-radius: 0px 0px 10px 10px;
+                display: none;
+            }
+
+
+            .searchlist ul{
+                padding:0;
+                max-height:400px;
+                overflow-x:hidden;
+            }
+            .searchlist ul li{
+                list-style:none;
+            }
+            .OyunforTVBtn{
+                cursor: pointer;
+            }
+            .OyunforTVBtn:hover{
+                color: #6441a4 !important;
+            }
+            .OyunforTVBtn a{
+                color: #a9a9a9;
+            }
+            .OyunforTVBtn a:hover{
+                color: #6441a4 !important;
+            }
+            .OyunforTVyoutube{
+                cursor: pointer;
+                margin-right: 10px;
+            }
+            .OyunforTVyoutube:hover{
+                color: #e62117 !important;
+            }
+            .OyunforTVyoutube a{
+                color: #a9a9a9;
+            }
+            .OyunforTVyoutube a:hover{
+                color: #e62117 !important;
+            }
+        </style>
+<style>
+            .siteFixNavSearchBar{
+                margin: 10px;
+                display: inline-table;
+                max-width: 260px;
+            }
+            .siteFixNavSearchBar .form-control{
+                border-left:2px solid #fff;
+                border-bottom:2px solid #fff;
+                border-top:2px solid #fff;
+                border-right:none;
+            }
+
+            .siteFixNavSearchBar .form-control:focus{
+                border-left:2px solid #fff;
+                border-bottom:2px solid #fff;
+                border-top:2px solid #fff;
+                border-right:none;
+                box-shadow:none;
+            }
+            .siteFixNavSearchBar .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+                background:#fff;
+                color: #000;
+                color: #000;
+            }
+            .siteFixNavSearchBar .form-control:focus + .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+                background:#fff;
+                color: #000;
+            }
+
+
+            .searchlistFix{
+                margin-top: -11px;
+                margin-left: 8px;
+                margin-right: 15px;
+                border-left: 2px solid #FF8D15;
+                border-bottom: 2px solid #FF8D15;
+                border-right: 2px solid #FF8D15;
+                position: absolute;
+                padding: 10px;
+                background: #fff;
+                width: calc(100% - 77.6%);
+                z-index: 9999;
+                border-radius: 0px 0px 10px 10px;
+                display:none;
+            }
+
+
+            .searchlistFix ul{
+                padding:0;
+                max-height:400px;
+                overflow-x:hidden;
+            }
+            .searchlistFix ul li{
+                list-style:none;
+            }
+        </style>
+<style>
+            .navbar-nav .balanceIcon{
+                position: relative;
+                display: block;
+            }
+            .navbar-nav .balanceIcon:hover{
+                background: #fff;
+                cursor: pointer;
+            }
+            .navbar-nav .balanceIcon:hover i{
+                color: #ff7b0d;
+            }
+            .navbar-nav .balanceIcon i{
+                padding: 5px;
+                margin: 8px;
+                color: #fff;
+            }
+            .navbar-nav .balanceIcon .Count{
+                min-width: 20px;
+                height: 20px;
+                background: #ff0000;
+                color: #fff;
+                border-radius: 12px;
+                text-align: center;
+                font-size: 12px;
+                position: absolute;
+                top: 2px;
+                right: 27px;
+                /* margin-top: -10px; */
+                margin-right: -25px;
+            }
+        </style>
+<style>
+            .exchangeBox{
+                position: fixed;
+                width: 300px;
+                background: #f5f5f5;
+                height: 400px;
+                top: 30%;
+                display: block;
+                right: 0px;
+                z-index: 999;
+                margin-right:-300px;
+                border:1px solid #cecece;
+            }
+            .exchangeBox .exchangeBtn{
+                position: relative;
+                background:url(https://www.oyunfor.com/asset/img/gbbtn.png) no-repeat 3px 8px;
+                width: 48px;
+                height: 200px;
+                color: #fff;
+                display: block;
+                margin-left: -48px;
+                float: left;
+                margin-top: -9px;
+                text-transform: uppercase;
+                text-orientation: upright;
+                writing-mode: vertical-rl;
+                font-size: xx-large;
+                font-weight: bold;
+                cursor:pointer;
+            }
+            .exchangeBox .exchangePanel{
+                position: relative;
+                height:400px;
+                width:300px;
+                display: block;
+                float: left;
+            }
+            .tuttur{
+                position: relative;
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .yellowText{
+                color: #ffa500;
+            }
+            .exchangeMenu{
+                background: #dedede;
+                display: block;
+                width:300px;
+            }
+            .exchangeMenu li{
+                padding: 2px;
+                border-radius: 0px;
+                background: #c3c3c3;
+                display: block;
+                border-radius: 4px;
+                float: left;
+                margin-top: 5px;
+                margin-left: 2px;
+                margin-bottom: 5px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .exchangeMenu li:hover{
+                cursor: pointer;
+                color: #fff;
+                background: #232323;
+            }
+            .exchangeContent{
+                display: block;
+                width:300px;
+                height:355px;
+                overflow-x: hidden;
+            }
+            .exchangeContent .table{
+                font-size:12px;
+            }
+            .exchangeContent .table thead>tr>th{
+                padding: 2px !important;
+                text-align: center;
+            }
+
+            .exchangeContent .table tbody>tr:hover>td:first-child{
+                font-weight: bold !important;
+            }
+
+            .exchangeContent .table tbody>tr>td:nth-child(2) a:hover{
+                color: #007fcc;
+            }
+            .exchangeContent .table tbody>tr>td:nth-child(3) a:hover{
+                color: #8BC34A;
+            }
+            .exchangeContent .table thead>tr>th:first-child{
+                text-align: left;
+                padding-left: 6px !important;
+            }
+            .exchangeContent .table tbody>tr>td{
+                padding: 2px !important;
+                text-align: center;
+            }
+            .exchangeContent .table tbody>tr>td a{
+                font-weight: bold !important;
+            }
+            .exchangeContent .table tbody>tr>td:first-child{
+                text-align: left;
+                padding-left: 6px !important;
+            }
+            .yellowColor{
+                background:#FF9800 !important;
+                color: #000 !important;
+            }
+			
+
+        </style>
+<style>
+
+
+            .topCatPane{
+                display: inline-block;
+            }
+            .topCatPane .topCatBox{
+                display: inline-block;
+                float: left;
+                width: calc(100% - 75%);
+                background: #ffffff;
+                height: 55px;
+                /* margin-left: 2px; */
+                -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+                -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+                box-shadow: 0px 0px 5px -2px rgba(0,0,0,1);
+                cursor: pointer;
+                border-bottom: 2px solid #949494;
+            }
+            .topCatPane .topCatBox:hover{
+                border-bottom: 3px solid #ff7b0d;
+            }
+            .topCatPane .topCatBox:first-child{
+                margin-left: 0px;
+            }
+            .topCatPane .topCatBox .topCatBoxIcon{
+                width: 44px;
+                height: 44px;
+                background: #fff;
+                display: inline-block;
+                float: left;
+                margin: 5px;
+            }
+            .topCatPane .topCatBox .topCatBoxText{
+                display: inline-block;
+                margin: 9px;
+            }
+            .topCatPane .topCatBox .topCatBoxIcon img{
+                width:100%;
+                height: 44px;
+            }
+            .topCatPane .topCatBox .topCatBoxText strong{
+                font-size: 14px;
+                display: block;
+            }
+            .topCatPane .topCatBox:hover .topCatBoxText strong{
+                color: #ff7b0d;
+            }
+            .topCatPane .topCatBox .topCatBoxText small{
+                font-size: 9.5px;
+                display: block;
+            }
+			@media (max-width:320px){
+				.sepetFixBtn{margin-right:2px;margin-top:13px;padding: 1px 3px;}
+
+				.navbar-header>ul{margin-left:-15px!important}
+				.navbar-toggle{margin-top:6px}
+			}
+			@media (max-width:360px) and (min-width:350px){
+
+				.sepetFixBtn{padding:6px 8px;}
+
+
+			}
+			@media (max-width:349px) and (min-width:321px){
+
+				.nav>li>a{padding: 10px 5px !important;}
+
+
+			}
+			@media (max-width:259px) and (min-width:225px){
+
+				.sepetFixBtn{margin-right:-4px !important; padding:0px 0px !important;}
+				.nav>li>a{padding: 10px 3px !important;font-size:10px !important;}
+
+			}
+			@media (max-width:310px) and (min-width:260px){
+
+
+				.nav>li>a{padding: 10px 7px !important;font-size:10px !important;}
+
+			}
+			@media (max-width:224px){
+				.nav>li>a{padding: 10px 3px;font-size: 9px;}
+			}
+            #flake {
+                color: #fff;
+                position: absolute;
+                font-size: 25px;
+                top: -50px;
+            }
+			.nbs-flexisel-item img{
+				width:unset !important;
+			}
+			.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+        </style>
+<style>
+	.form-control2{
+		font-size:12px!important;
+		height:26px!important;
+	}
+	.form-group2{
+		margin-bottom:5px!important;
+	}
+</style>
+<style>
+            
+		#fixtop > i {top:0px!important;}
+
+        </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5RFPV5');</script>
+<script async>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-51226821-1','auto');ga('send','pageview');</script>
+<style>
+	.tuzel{
+		display:none;
+	}
+	.new-input{
+		height:28px;
+		font-size:12px;
+	}
+</style><style>
+                        .futuredBPane {
+                            position: relative;
+                            display: block;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBHead {
+                            border: 1px solid #dadada;
+                            margin: 10px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBHead img {
+                            width: 100%;
+                            height: 100%;
+                            margin: 0 auto;
+                            padding: 8px;
+                            position: relative;
+                            display: block;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent {
+                            margin: 10px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBMid {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBMidBot {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #ff8d15;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotInfo {
+                            margin-top: 20px;
+                            color: #2196F3;
+                            font-size: 14px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotForm {
+                            margin-top: 4%;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner {
+                            display: block;
+                            position: relative;
+                            float: left;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner input {
+                            text-align: center;
+                            border-radius: 3px 0px 0px 3px;
+                            width: 80px !important;
+                            font-weight: bold;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner .input-group-btn-vertical {
+                            position: relative;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            display: table-cell;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner .input-group-btn-vertical > .btn {
+                            display: block;
+                            float: none;
+                            width: 100%;
+                            max-width: 100%;
+                            padding: 8px;
+                            margin-left: -1px;
+                            position: relative;
+                            border-radius: 0;
+                            outline: none;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner .input-group-btn-vertical > .btn:first-child {
+                            border-top-right-radius: 4px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner .input-group-btn-vertical > .btn:last-child {
+                            margin-top: -2px;
+                            border-bottom-right-radius: 4px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount .spinner .input-group-btn-vertical i {
+                            position: absolute;
+                            top: 0;
+                            left: 4px;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotForm {
+                            display: block;
+                            position: relative;
+                        }
+
+                        .futuredBPane .futuredBBlock .futuredBContent .futuredBBotCount {
+                            display: inline-block;
+                            position: relative;
+                            margin-top: 20px;
+                        }
+
+                        .futuredBPane .futuredBBlock .fBInfo {
+                            height: 144px;
+                            margin-bottom: 16px;
+                        }
+
+                        .futuredBPane .futuredBBlock .fBInfo div {
+                            background: #ff0000;
+                            width: 100%;
+                            display: block;
+                            position: relative;
+                            padding: 8px;
+                            text-align: center;
+                            line-height: 1;
+                            color: #fff;
+                            font-weight: bold;
+                            font-size: 14px;
+                            z-index: 1;
+                        }
+
+                        .futuredBPane .futuredBBlock .fBInfo .fLast {
+                            margin-top: 5px;
+                            background: #FFC107;
+                            color: #000;
+                        }
+
+                        .futuredBPane .futuredBBlock .fBInfo .fTime {
+                            margin-top: 5px;
+                            background: #1e88e5;
+                        }
+
+                        @media (max-width: 768px) {
+                            .futuredBPane .InfoBasket {
+                                margin-bottom: 10px !important;
+                            }
+                        }
+
+                        .futuredBPane .InfoBasket {
+                            background: #8bc34a;
+                            padding: 3px;
+                            color: #3c763d;
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin-top: 10px;
+                            display: none;
+                            margin-bottom: -8px;
+                        }
+                    </style><style>
+                                    .totalsProduct > tbody > tr:nth-child(1) {
+                                        border-top: 2px solid #fff !important;
+                                    }
+
+                                    .totalsProduct > tbody > tr:nth-child(3) {
+                                        border-top: 2px solid #cecece;
+                                        background: #efefef;
+                                        color: #4a4a4a;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                    }
+                                </style><style>
+                                .futuredBot .btn {
+                                    border-radius: 0;
+                                }
+                            </style><style>
+                    #commentTablePane {
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        border-top: 1px solid #dadada;
+                        border-left: 1px solid #dadada;
+                        border-right: 1px solid #dadada;
+                        border-bottom: 3px solid #1e88e5;
+                    }
+
+                    #commentTablePane .futuredBHead {
+                        margin: 25px;
+                        position: relative;
+                        display: block;
+                        text-align: center;
+                    }
+
+                    #commentTablePane .futuredBHead img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .ratings-table {
+                        padding-top: 10px;
+                        padding-left: 20px;
+                    }
+
+                    .ratings-table .ratings-row {
+                        margin-bottom: 10px;
+                        line-height: 1;
+                        display: inline-block;
+                    }
+
+                    .ratings-table .ratings-image-and-text {
+                        -webkit-transition: all .2s ease-in;
+                        -moz-transition: all .2s ease-in;
+                        transition: all .2s ease-in;
+                        border-radius: 30px;
+                        -moz-border-radius: 30px;
+                        -o-border-radius: 30px;
+                        -webkit-border-radius: 30px;
+                        -ms-webkit-radius: 30px;
+                        zoom: 1;
+                        width: auto;
+                        min-width: 170px;
+                        display: inline-block;
+                        margin-right: 0px;
+                        padding: 0px 10px;
+                        float: left;
+                    }
+
+                    .ratings-table .rating-img-col {
+                        display: inline-block;
+                    }
+
+                    .ratings-container {
+                        width: 100%;
+                        height: 10px;
+                        line-height: 1;
+                    }
+
+                    .ratings-container .ratings {
+                        width: 64px;
+                        height: 10px;
+                        display: inline-block;
+                        margin: 0 auto;
+                        background-image: url(asset/img/rating_disabled_star.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+
+                    .ratings-container .ratings.active {
+                        display: block;
+                        float: left;
+                        background-image: url(asset/img/rating_star.svg);
+                        background-size: cover;
+                        text-indent: -9999px;
+                    }
+
+                    .ratings-table .rating-text-col {
+                        width: 100px;
+                        display: inline-block;
+                        line-height: 1;
+                        font-size: 11px;
+                    }
+
+                    .ratings-table .rating-text-col .rating-text {
+                        width: auto;
+                        display: inline-block;
+                        margin-left: 10px;
+                        line-height: 1;
+                    }
+
+                    .ratings-table .rating-text-col .rating-count {
+                        width: auto;
+                        display: inline-block;
+                        margin-left: 10px;
+                        line-height: 1;
+                    }
+
+                    .ratings-table .rating-percentage-col {
+                        border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -ms-webkit-radius: 10px;
+                        zoom: 1;
+                        width: 400px;
+                        height: 16px;
+                        margin-left: 40px;
+                        display: inline-block;
+                        padding: 4px;
+                        background-color: #eee;
+                        position: relative;
+                        float: left;
+                        white-space: nowrap;
+                        z-index: 0;
+                    }
+
+                    .ratings-table .rating-percentage-col .percent {
+                        width: auto;
+                        height: 12px;
+                        font-size: 12px;
+                        position: absolute;
+                        left: 420px;
+                        bottom: 2px;
+                        color: #919191;
+                        line-height: 1;
+                        font-weight: 700;
+                    }
+
+                    .ratings-table .rating-percentage-col .rating-percentage {
+                        border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -ms-webkit-radius: 10px;
+                        zoom: 1;
+                        height: 8px;
+                        display: block;
+                        background-color: #f28b00;
+                        text-indent: -9999px;
+                    }
+
+                    .average-ratings {
+                        padding-top: 25px;
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .average-ratings .average-rating {
+                        font-family: sans-serif;
+                        /* width: 118px; */
+                        background-color: #FFF;
+                        font-size: 14px;
+                        color: #919191;
+                        position: relative;
+                        /* left: 30px; */
+                        top: -10px;
+                        text-align: center;
+                    }
+
+                    .average-ratings .product-rating {
+                        text-align: center;
+                    }
+
+                    .ratings-container.bigger {
+
+                    }
+
+                    .ratings-container.bigger .ratings {
+                        width: 128px;
+                        height: 20px;
+                    }
+
+                    .ratings-container {
+                        width: 100%;
+                        height: 10px;
+                        line-height: 1;
+                    }
+
+                    .average-ratings .rating-number {
+                        margin: 0 auto;
+                        width: 115px;
+                        color: #646464;
+                        font-size: 84px;
+                        text-align: center;
+                    }
+
+                    #commentsRollerPane {
+                        position: relative;
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                </style><style>
+                                       #commentsRollerPane {
+                                           position: relative;
+                                           display: block;
+                                       }
+
+                                       #commentsRollerPane .commentBlocks {
+                                           min-height: 130px;
+                                           display: block;
+                                           border: 1px solid #dadada;
+                                           margin-bottom: 10px;
+                                       }
+
+                                       #commentsRollerPane .commentBlocks .commentBlocksHead {
+                                           display: block;
+                                           position: relative;
+                                           min-height: 40px;
+                                           border-bottom: 1px solid #dadada;
+                                           background: #f7f7f7;
+                                       }
+
+                                       #commentsRollerPane .commentBlocks .commentBlocksHead .commentBlocksName {
+                                           display: inline-block;
+                                           float: left;
+                                           line-height: 2.5;
+                                           font-weight: bold;
+                                           font-size: 16px;
+                                           margin-left: 12px;
+                                       }
+
+                                       #commentsRollerPane .commentBlocks .commentBlocksHead .commentBlocksSTime {
+                                           display: inline-block;
+                                           width: 190px;
+                                           overflow: hidden;
+                                           float: right;
+                                           line-height: 2.5;
+                                           font-size: 14px;
+                                           color: #757575;
+                                           margin-right: 7px;
+                                       }
+
+                                       #commentsRollerPane .commentBlocks .commentBlocksBody {
+                                           padding: 20px;
+                                           color: #6b6b6b;
+                                       }
+                                    </style><style>
+                                    .OnemliDivs {
+                                        padding: 20px;
+                                    }
+                                </style><style>
+                    .pwrt{
+                        font-size: 12px;
+                        font-weight: bold;
+                        margin: 0;
+                        display: inline-block;
+                    }
+                    .pwrt2{
+                        font-size: 12px;
+                        margin: 0;
+                        display: inline-block;
+                    }
+                </style><style>
+.back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 35px;
+    right: 4px;
+	text-align:center;
+    width: 32px;
+    height: 32px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: #fe5621;
+}
+
+.back-to-top i {
+    font-size: 24px;
+}
+</style><style>
+    .supportMini{
+        display: none;
+        width:100px;
+        height:100px;
+        position: fixed;
+        right:0;
+        bottom:0;
+        z-index: 9999;
+    }
+</style></head>
+<body ng-app=oyunforApp>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFPV5" height=0 width=0 style="display:none;visibility:hidden"></iframe></noscript>
+<div class="modal fade" id=address-modal tabindex=-1 role=dialog data-backdrop=static aria-hidden=true data-keyboard=false aria-labelledby=exampleModalLabel style="background-color:#00000082;">
+<div class=modal-dialog role=document>
+<div class=modal-content>
+<form id=faturaBilgisi>
+<div class=modal-header>
+<h5 class=modal-title id=exampleModalLabel>Fatura Bilgisi Ekle</h5>
+</div>
+<div class=modal-body>
+<div class=col-xs-24 style="float:none;">
+<div class=row>
+<div class=col-md-24>
+<div class=row>
+<div class="custom-control custom-radio custom-control-inline" style="float:left;margin-right:15px;margin-bottom:10px;padding-left:7.5px;">
+<input type=radio id=tip1 name=fatura_tipi class=custom-control-input value=a checked>
+<label class=custom-control-label for=tip1>Bireysel</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+<input type=radio id=tip2 name=fatura_tipi class=custom-control-input value=b>
+<label class=custom-control-label for=tip2>Tüzel</label>
+</div>
+</div>
+</div>
+<div class="col-md-12 tuzel">
+<div class=form-group>
+<label class=control-label>Unvan</label>
+<input type=text class="form-control new-input" name=unvan placeholder="Unvanı Girin">
+</div>
+</div>
+<div class="col-md-8 bireysel" id=aad>
+<div class=form-group>
+<label class=control-label>Ad Soyad</label>
+<input type=text class="form-control new-input" id=ad_soyad_kontrol name=ad_soyad placeholder="Ad Soyad Girin">
+</div>
+</div>
+<div class=col-md-8 id=tell>
+<div class=form-group>
+<label class=control-label>Telefon Numarası</label>
+<input type=text class="form-control new-input" id=tel_control name=telefon placeholder="Telefon Numarası">
+</div>
+</div>
+<div class="col-md-12 tuzel">
+<div class=form-group>
+<label class=control-label>Vergi Dairesi</label>
+<input type=text class="form-control new-input" name=vergi_dairesi placeholder="Vergi Dairesi">
+</div>
+</div>
+<div class="col-md-8 bireysel" id=ttc>
+<div class=form-group>
+<label class=control-label>TC Kimlik No</label>
+<input type=text class="form-control new-input" maxlength=11 id=tc_kimlik_kontrol name=tcno placeholder="TC Kimlik Numarası Girin">
+</div>
+</div>
+<div style="padding-left: 10px;width: 100%;float: left;" class=bireysel>
+<input type=checkbox id=adres-yabanci2 name=adres-yabanci2 style="margin-top:5px;" value=1>
+<label for=adres-yabanci2 style="font-size: 10px;position: absolute;top: 107px;left: 28px;">TC Vatandaşı Değilim.</label>
+</div>
+<div class="col-md-12 tuzel">
+<div class=form-group>
+<label class=control-label>Vergi Numarası</label>
+<input type=text class="form-control new-input" name=vergi_no placeholder="Vergi Numarası">
+</div>
+</div>
+<div class="col-md-24 tuzel">
+<div class=form-group>
+<label class=control-label>Adres</label>
+<textarea class="form-control new-input" name=adres placeholder="Adres Girin" style="border-bottom-left-radius: 0px;border-bottom-right-radius:  0px;"></textarea>
+<div style="border: 1px solid #ccc;border-top: 0px;padding-left:10px;">
+<input type=checkbox id=adres-yabanci name=adres-yabanci style="margin-top:5px;">
+<label for=adres-yabanci style="font-size: 10px;position: absolute;bottom: 15px;left: 35px;">Yurtdışı Firmasıyız.</label>
+</div>
+</div>
+</div>
+<div class=col-md-12 id=il-block>
+<div class=form-group>
+<label class=control-label>İl</label>
+<select id=il-degis class="form-control new-input">
+<option selected disabled>İl Seçin</option>
+<option value=1 id=veri-1>ADANA<br><option value=2 id=veri-2>ADIYAMAN<br><option value=3 id=veri-3>AFYONKARAHİSAR<br><option value=4 id=veri-4>AĞRI<br><option value=5 id=veri-5>AMASYA<br><option value=6 id=veri-6>ANKARA<br><option value=7 id=veri-7>ANTALYA<br><option value=8 id=veri-8>ARTVİN<br><option value=9 id=veri-9>AYDIN<br><option value=10 id=veri-10>BALIKESİR<br><option value=11 id=veri-11>BİLECİK<br><option value=12 id=veri-12>BİNGÖL<br><option value=13 id=veri-13>BİTLİS<br><option value=14 id=veri-14>BOLU<br><option value=15 id=veri-15>BURDUR<br><option value=16 id=veri-16>BURSA<br><option value=17 id=veri-17>ÇANAKKALE<br><option value=18 id=veri-18>ÇANKIRI<br><option value=19 id=veri-19>ÇORUM<br><option value=20 id=veri-20>DENİZLİ<br><option value=21 id=veri-21>DİYARBAKIR<br><option value=22 id=veri-22>EDİRNE<br><option value=23 id=veri-23>ELAZIĞ<br><option value=24 id=veri-24>ERZİNCAN<br><option value=25 id=veri-25>ERZURUM<br><option value=26 id=veri-26>ESKİŞEHİR<br><option value=27 id=veri-27>GAZİANTEP<br><option value=28 id=veri-28>GİRESUN<br><option value=29 id=veri-29>GÜMÜŞHANE<br><option value=30 id=veri-30>HAKKARİ<br><option value=31 id=veri-31>HATAY<br><option value=32 id=veri-32>ISPARTA<br><option value=33 id=veri-33>MERSİN<br><option value=34 id=veri-34>İSTANBUL<br><option value=35 id=veri-35>İZMİR<br><option value=36 id=veri-36>KARS<br><option value=37 id=veri-37>KASTAMONU<br><option value=38 id=veri-38>KAYSERİ<br><option value=39 id=veri-39>KIRKLARELİ<br><option value=40 id=veri-40>KIRŞEHİR<br><option value=41 id=veri-41>KOCAELİ<br><option value=42 id=veri-42>KONYA<br><option value=43 id=veri-43>KÜTAHYA<br><option value=44 id=veri-44>MALATYA<br><option value=45 id=veri-45>MANİSA<br><option value=46 id=veri-46>KAHRAMANMARAŞ<br><option value=47 id=veri-47>MARDİN<br><option value=48 id=veri-48>MUĞLA<br><option value=49 id=veri-49>MUŞ<br><option value=50 id=veri-50>NEVŞEHİR<br><option value=51 id=veri-51>NİĞDE<br><option value=52 id=veri-52>ORDU<br><option value=53 id=veri-53>RİZE<br><option value=54 id=veri-54>SAKARYA<br><option value=55 id=veri-55>SAMSUN<br><option value=56 id=veri-56>SİİRT<br><option value=57 id=veri-57>SİNOP<br><option value=58 id=veri-58>SİVAS<br><option value=59 id=veri-59>TEKİRDAĞ<br><option value=60 id=veri-60>TOKAT<br><option value=61 id=veri-61>TRABZON<br><option value=62 id=veri-62>TUNCELİ<br><option value=63 id=veri-63>ŞANLIURFA<br><option value=64 id=veri-64>UŞAK<br><option value=65 id=veri-65>VAN<br><option value=66 id=veri-66>YOZGAT<br><option value=67 id=veri-67>ZONGULDAK<br><option value=68 id=veri-68>AKSARAY<br><option value=69 id=veri-69>BAYBURT<br><option value=70 id=veri-70>KARAMAN<br><option value=71 id=veri-71>KIRIKKALE<br><option value=72 id=veri-72>BATMAN<br><option value=73 id=veri-73>ŞIRNAK<br><option value=74 id=veri-74>BARTIN<br><option value=75 id=veri-75>ARDAHAN<br><option value=76 id=veri-76>IĞDIR<br><option value=77 id=veri-77>YALOVA<br><option value=78 id=veri-78>KARABÜK<br><option value=79 id=veri-79>KİLİS<br><option value=80 id=veri-80>OSMANİYE<br><option value=81 id=veri-81>DÜZCE<br>	</select>
+<select id=il-degis2 name=il class="form-control hidden new-input">
+<option selected disabled>İl Seçin</option>
+<option value=ADANA>ADANA<br><option value=ADIYAMAN>ADIYAMAN<br><option value="AFYONKARAHİSAR">AFYONKARAHİSAR<br><option value="AĞRI">AĞRI<br><option value=AMASYA>AMASYA<br><option value=ANKARA>ANKARA<br><option value=ANTALYA>ANTALYA<br><option value="ARTVİN">ARTVİN<br><option value=AYDIN>AYDIN<br><option value="BALIKESİR">BALIKESİR<br><option value="BİLECİK">BİLECİK<br><option value="BİNGÖL">BİNGÖL<br><option value="BİTLİS">BİTLİS<br><option value=BOLU>BOLU<br><option value=BURDUR>BURDUR<br><option value=BURSA>BURSA<br><option value="ÇANAKKALE">ÇANAKKALE<br><option value="ÇANKIRI">ÇANKIRI<br><option value="ÇORUM">ÇORUM<br><option value="DENİZLİ">DENİZLİ<br><option value="DİYARBAKIR">DİYARBAKIR<br><option value="EDİRNE">EDİRNE<br><option value="ELAZIĞ">ELAZIĞ<br><option value="ERZİNCAN">ERZİNCAN<br><option value=ERZURUM>ERZURUM<br><option value="ESKİŞEHİR">ESKİŞEHİR<br><option value="GAZİANTEP">GAZİANTEP<br><option value="GİRESUN">GİRESUN<br><option value="GÜMÜŞHANE">GÜMÜŞHANE<br><option value="HAKKARİ">HAKKARİ<br><option value=HATAY>HATAY<br><option value=ISPARTA>ISPARTA<br><option value="MERSİN">MERSİN<br><option value="İSTANBUL">İSTANBUL<br><option value="İZMİR">İZMİR<br><option value=KARS>KARS<br><option value=KASTAMONU>KASTAMONU<br><option value="KAYSERİ">KAYSERİ<br><option value="KIRKLARELİ">KIRKLARELİ<br><option value="KIRŞEHİR">KIRŞEHİR<br><option value="KOCAELİ">KOCAELİ<br><option value=KONYA>KONYA<br><option value="KÜTAHYA">KÜTAHYA<br><option value=MALATYA>MALATYA<br><option value="MANİSA">MANİSA<br><option value="KAHRAMANMARAŞ">KAHRAMANMARAŞ<br><option value="MARDİN">MARDİN<br><option value="MUĞLA">MUĞLA<br><option value="MUŞ">MUŞ<br><option value="NEVŞEHİR">NEVŞEHİR<br><option value="NİĞDE">NİĞDE<br><option value=ORDU>ORDU<br><option value="RİZE">RİZE<br><option value=SAKARYA>SAKARYA<br><option value=SAMSUN>SAMSUN<br><option value="SİİRT">SİİRT<br><option value="SİNOP">SİNOP<br><option value="SİVAS">SİVAS<br><option value="TEKİRDAĞ">TEKİRDAĞ<br><option value=TOKAT>TOKAT<br><option value=TRABZON>TRABZON<br><option value="TUNCELİ">TUNCELİ<br><option value="ŞANLIURFA">ŞANLIURFA<br><option value="UŞAK">UŞAK<br><option value=VAN>VAN<br><option value=YOZGAT>YOZGAT<br><option value=ZONGULDAK>ZONGULDAK<br><option value=AKSARAY>AKSARAY<br><option value=BAYBURT>BAYBURT<br><option value=KARAMAN>KARAMAN<br><option value=KIRIKKALE>KIRIKKALE<br><option value=BATMAN>BATMAN<br><option value="ŞIRNAK">ŞIRNAK<br><option value=BARTIN>BARTIN<br><option value=ARDAHAN>ARDAHAN<br><option value="IĞDIR">IĞDIR<br><option value=YALOVA>YALOVA<br><option value="KARABÜK">KARABÜK<br><option value="KİLİS">KİLİS<br><option value="OSMANİYE">OSMANİYE<br><option value="DÜZCE">DÜZCE<br>	</select>
+</div>
+</div>
+<div class=col-md-12 id=ilce-block>
+<div class=form-group>
+<label class=control-label>İlçe</label>
+<select id=ilce name=ilce class="form-control new-input" disabled>
+<option selected disabled>İlçe Seçin</option>
+</select>
+</div>
+</div>
+<div style="padding-left: 10px;width: 100%;float: left;">
+<input type=checkbox id=varsayilan name=varsayilan style="margin-top:5px;" checked value=1>
+<label for=varsayilan style="font-size: 10px;position: absolute;bottom: 0px;left: 28px;">Varsayılan Olarak Ayarla.</label>
+</div>
+</div>
+</div>
+</div>
+<div class=modal-footer>
+<input type=hidden id=fatura-degiskeni data-value="" data-urun-id="" data-urun-adet="" data-urun-deger="">
+<button type=button class="btn btn-success bireysel-btn FaturaBilgisiEkle" disabled>Kaydet</button>
+<button type=button class="btn btn-success tuzel-btn FaturaBilgisiEkle" style="display:none;">Kaydet</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>$(document).ready(function(){function string_kontrol(string){var kontrol=new RegExp(/[a-zA-Z]+$/g);return kontrol.test(string);}function cep(tel){if(tel.length==10){var telno=/^\d{10}$/;}else if(tel.length==11){var telno=/^\d{11}$/;}else{var telno=/^\d{11}$/;}if(tel.match(telno)){return true;}else{return false;}}function tck(tel){var telno=/^\d{11}$/;if(tel.match(telno)){return true;}else{return false;}}$("#ilce").change(function(){var ilcem=$(this).val();var ad=$("#ad_soyad_control").val();var tc=$("#tc_kimlik_kontrol").val();var tel=$("#tel_control").val();if(cep(tel)){telim=1;}else{telim=0;}if(string_kontrol(ad)){adim=1;}else{adim=0;}if(tck(tc)){tcm=1;}else{tcm=0;}if($("#tip1").is(":checked")){if($("#adres-yabanci2").is(":checked")){if(adim==1&&telim==1){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}else{if(adim==1&&telim==1&&tcm==1&&ilcem!=null){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}}});$("#tel_control").keyup(function(){var tel=$(this).val();var ad=$("#ad_soyad_control").val();var tc=$("#tc_kimlik_kontrol").val();var ilcem=$("#ilce").val();if(cep(tel)){telim=1;}else{telim=0;}if(string_kontrol(ad)){adim=1;}else{adim=0;}if(tck(tc)){tcm=1;}else{tcm=0;}if($("#tip1").is(":checked")){if($("#adres-yabanci2").is(":checked")){if(adim==1&&telim==1){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}else{if(adim==1&&telim==1&&tcm==1&&ilcem!=null){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}}});$("#ad_soyad_control").keyup(function(){var ad=$(this).val();var tel=$("#tel_control").val();var tc=$("#tc_kimlik_kontrol").val();var ilcem=$("#ilce").val();if(cep(tel)){telim=1;}else{telim=0;}if(string_kontrol(ad)){adim=1;}else{adim=0;}if(tck(tc)){tcm=1;}else{tcm=0;}if($("#tip1").is(":checked")){if($("#adres-yabanci2").is(":checked")){if(adim==1&&telim==1){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}else{if(adim==1&&telim==1&&tcm==1&&ilcem!=null){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}}});$("#tc_kimlik_kontrol").keyup(function(){var tc=$(this).val();var tel=$("#tel_control").val();var ad=$("#ad_soyad_control").val();var ilcem=$("#ilce").val();if(cep(tel)){telim=1;}else{telim=0;}if(string_kontrol(ad)){adim=1;}else{adim=0;}if(tck(tc)){tcm=1;}else{tcm=0;}if($("#tip1").is(":checked")){if($("#adres-yabanci2").is(":checked")){if(adim==1&&telim==1){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}else{if(adim==1&&telim==1&&tcm==1&&ilcem!=null){$(".bireysel-btn").prop("disabled",false);}else{$(".bireysel-btn").prop("disabled",true);}}}});$("input:checkbox[name=adres-yabanci2]").change(function(){if($(this).is(":checked")){$("#ttc").hide();$("#aad").attr("class","col-md-12 bireysel");$("#tell").attr("class","col-md-12");$("#il-block").hide();$("#ilce-block").hide();}else{$("#ttc").show();$("#aad").attr("class","col-md-8 bireysel");$("#tell").attr("class","col-md-8");$("#il-block").show();$("#ilce-block").show();}});$("input:checkbox[name=adres-yabanci]").change(function(){if($(this).is(":checked")){$("#il-block").hide();$("#ilce-block").hide();}else{$("#il-block").show();$("#ilce-block").show();}});$('input:radio[name=fatura_tipi]').change(function(){if(this.value=='a'){$(".tuzel").hide();$(".bireysel").show();if($("#adres-yabanci2").is(":checked")){$("#ttc").hide();$("#add").attr("class","col-md-12 bireysel");$("#tell").attr("class","col-md-12");}else{$("#ttc").show();$("#add").attr("class","col-md-8 bireysel");$("#tell").attr("class","col-md-8");}$(".bireysel-btn").show();$(".tuzel-btn").hide();}else if(this.value=='b'){$(".tuzel").show();$(".bireysel").hide();$("#tell").attr("class","col-md-12");if($("#adres-yabanci").is(":checked")){$("#il-block").hide();$("#ilce-block").hide();}else{$("#il-block").show();$("#ilce-block").show();}$(".bireysel-btn").hide();$(".tuzel-btn").show();$("#il-block").show();$("#ilce-block").show();}});$("#il-degis").change(function(){var idmiz=$(this).val();$("#ilce").html("");$("#ilce").append('<option disabled selected>İlçe Seçin</option>');var deger=$(this).val()-1;$.getJSON("json/il-ilce.json",function(result){$.each(result[deger]['ilceler'],function(key,value){var icerik='<option value="'+value['ilce_adi']+'">'+value['ilce_adi']+'</option>';$("#ilce").append(icerik);});});$("#ilce").prop("disabled",false);$("#il-degis2").val($("#veri-"+idmiz).html());});});</script>
+<div id=darkness></div>
+<div id=pwdModal class="modal fade" tabindex=-1 role=dialog aria-hidden=true>
+<div class=modal-dialog role=document>
+<div class=modal-content>
+<div class=modal-header>
+<button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span>
+</button>
+<div class=text-center id=myModalLabels>Şifremi Unuttum!</div>
+</div>
+<div class=modal-body>
+<p>Aşağıdaki kutucuğa e-posta adresinizi girerek şifrenizi alabilirsiniz</p>
+<div class=panel-body>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade bs-kayit-modal-md" id=kayit-modal tabindex=-1 role=dialog aria-labelledby=myLargeModalLabel>
+<div class="modal-dialog modal-lg">
+<div class=modal-content>
+<div class=modal-header>
+<button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>&times;</span>
+</button>
+<p class=modal-title id=myModalLabel>Kayıt Ol</p>
+</div>
+<div class=modal-body>
+<div class=row>
+<div class="col-xs-24 col-md-12">
+<div class=well id=kayitcontainer style="float:left;padding-bottom:27px;">
+<form id=kayitForm method=POST>
+<div class=col-xs-24>
+<div class="form-group form-group2 col-xs-12">
+<label for=username class=control-label>Ad</label>
+<input type=text class="form-control form-control2 input-md" name=kad value="" required title="" placeholder="örn:Ahmet">
+<span class=help-block></span>
+</div>
+<div class="form-group form-group2 col-xs-12">
+<label for=username class=control-label>Soyad</label>
+<input type=text class="form-control form-control2 input-md" name=ksoyad value="" required title="" placeholder="örn:YAVASÇA">
+<span class=help-block></span>
+</div>
+</div>
+<div class=col-xs-24>
+<div class="form-group form-group2 col-xs-24">
+<label for=username class=control-label>E-posta</label>
+<input type=email id=kEmail class="form-control form-control2 input-md" name=keposta value="" required title="" placeholder="örn:example@example.com">
+<span class=help-block></span>
+</div>
+</div>
+<div class=col-xs-24>
+<div class="form-group form-group2 col-xs-12">
+<label for=username class=control-label>Telefon</label>
+<input type=tel id=phone class="form-control form-control2 input-md" name=ktelefon value="" required title="" placeholder="örn:0555555555">
+<span class=help-block></span>
+</div>
+<div class="form-group form-group2 col-xs-12">
+<label for=username class=control-label>TC Kimlik Numarası</label>
+<input type=tcno class="form-control form-control2 input-md" name=ktcno placeholder="örn:12345678901" value="" maxlength=11 required title="">
+<span class=help-block></span>
+</div>
+</div>
+<div class=col-xs-24>
+<div class="form-group form-group2 col-xs-12">
+<label for=password class=control-label>Şifre</label>
+<input type=password class="form-control form-control2 input-md" name=ksifre placeholder="" value="" required title="">
+<span class=help-block></span>
+</div>
+<div class="form-group form-group2 col-xs-12">
+<label for=password class=control-label>Şifre</label>
+<input type=password class="form-control form-control2 input-md" name=ksifre2 placeholder="" value="" required title="">
+<span class=help-block></span>
+</div>
+</div>
+<div class=col-xs-24 id=il-block2>
+<div class=col-md-12 id=il-block2>
+<div class=form-group>
+<label class=control-label>İl</label>
+<select id=il-degis3 class="form-control new-input">
+<option selected disabled>İl Seçin</option>
+<option value=1 id=veri-1>ADANA<br><option value=2 id=veri-2>ADIYAMAN<br><option value=3 id=veri-3>AFYONKARAHİSAR<br><option value=4 id=veri-4>AĞRI<br><option value=5 id=veri-5>AMASYA<br><option value=6 id=veri-6>ANKARA<br><option value=7 id=veri-7>ANTALYA<br><option value=8 id=veri-8>ARTVİN<br><option value=9 id=veri-9>AYDIN<br><option value=10 id=veri-10>BALIKESİR<br><option value=11 id=veri-11>BİLECİK<br><option value=12 id=veri-12>BİNGÖL<br><option value=13 id=veri-13>BİTLİS<br><option value=14 id=veri-14>BOLU<br><option value=15 id=veri-15>BURDUR<br><option value=16 id=veri-16>BURSA<br><option value=17 id=veri-17>ÇANAKKALE<br><option value=18 id=veri-18>ÇANKIRI<br><option value=19 id=veri-19>ÇORUM<br><option value=20 id=veri-20>DENİZLİ<br><option value=21 id=veri-21>DİYARBAKIR<br><option value=22 id=veri-22>EDİRNE<br><option value=23 id=veri-23>ELAZIĞ<br><option value=24 id=veri-24>ERZİNCAN<br><option value=25 id=veri-25>ERZURUM<br><option value=26 id=veri-26>ESKİŞEHİR<br><option value=27 id=veri-27>GAZİANTEP<br><option value=28 id=veri-28>GİRESUN<br><option value=29 id=veri-29>GÜMÜŞHANE<br><option value=30 id=veri-30>HAKKARİ<br><option value=31 id=veri-31>HATAY<br><option value=32 id=veri-32>ISPARTA<br><option value=33 id=veri-33>MERSİN<br><option value=34 id=veri-34>İSTANBUL<br><option value=35 id=veri-35>İZMİR<br><option value=36 id=veri-36>KARS<br><option value=37 id=veri-37>KASTAMONU<br><option value=38 id=veri-38>KAYSERİ<br><option value=39 id=veri-39>KIRKLARELİ<br><option value=40 id=veri-40>KIRŞEHİR<br><option value=41 id=veri-41>KOCAELİ<br><option value=42 id=veri-42>KONYA<br><option value=43 id=veri-43>KÜTAHYA<br><option value=44 id=veri-44>MALATYA<br><option value=45 id=veri-45>MANİSA<br><option value=46 id=veri-46>KAHRAMANMARAŞ<br><option value=47 id=veri-47>MARDİN<br><option value=48 id=veri-48>MUĞLA<br><option value=49 id=veri-49>MUŞ<br><option value=50 id=veri-50>NEVŞEHİR<br><option value=51 id=veri-51>NİĞDE<br><option value=52 id=veri-52>ORDU<br><option value=53 id=veri-53>RİZE<br><option value=54 id=veri-54>SAKARYA<br><option value=55 id=veri-55>SAMSUN<br><option value=56 id=veri-56>SİİRT<br><option value=57 id=veri-57>SİNOP<br><option value=58 id=veri-58>SİVAS<br><option value=59 id=veri-59>TEKİRDAĞ<br><option value=60 id=veri-60>TOKAT<br><option value=61 id=veri-61>TRABZON<br><option value=62 id=veri-62>TUNCELİ<br><option value=63 id=veri-63>ŞANLIURFA<br><option value=64 id=veri-64>UŞAK<br><option value=65 id=veri-65>VAN<br><option value=66 id=veri-66>YOZGAT<br><option value=67 id=veri-67>ZONGULDAK<br><option value=68 id=veri-68>AKSARAY<br><option value=69 id=veri-69>BAYBURT<br><option value=70 id=veri-70>KARAMAN<br><option value=71 id=veri-71>KIRIKKALE<br><option value=72 id=veri-72>BATMAN<br><option value=73 id=veri-73>ŞIRNAK<br><option value=74 id=veri-74>BARTIN<br><option value=75 id=veri-75>ARDAHAN<br><option value=76 id=veri-76>IĞDIR<br><option value=77 id=veri-77>YALOVA<br><option value=78 id=veri-78>KARABÜK<br><option value=79 id=veri-79>KİLİS<br><option value=80 id=veri-80>OSMANİYE<br><option value=81 id=veri-81>DÜZCE<br>	</select>
+<select id=il-degis4 name=il class="form-control hidden new-input">
+<option selected disabled>İl Seçin</option>
+<option value=ADANA>ADANA<br><option value=ADIYAMAN>ADIYAMAN<br><option value="AFYONKARAHİSAR">AFYONKARAHİSAR<br><option value="AĞRI">AĞRI<br><option value=AMASYA>AMASYA<br><option value=ANKARA>ANKARA<br><option value=ANTALYA>ANTALYA<br><option value="ARTVİN">ARTVİN<br><option value=AYDIN>AYDIN<br><option value="BALIKESİR">BALIKESİR<br><option value="BİLECİK">BİLECİK<br><option value="BİNGÖL">BİNGÖL<br><option value="BİTLİS">BİTLİS<br><option value=BOLU>BOLU<br><option value=BURDUR>BURDUR<br><option value=BURSA>BURSA<br><option value="ÇANAKKALE">ÇANAKKALE<br><option value="ÇANKIRI">ÇANKIRI<br><option value="ÇORUM">ÇORUM<br><option value="DENİZLİ">DENİZLİ<br><option value="DİYARBAKIR">DİYARBAKIR<br><option value="EDİRNE">EDİRNE<br><option value="ELAZIĞ">ELAZIĞ<br><option value="ERZİNCAN">ERZİNCAN<br><option value=ERZURUM>ERZURUM<br><option value="ESKİŞEHİR">ESKİŞEHİR<br><option value="GAZİANTEP">GAZİANTEP<br><option value="GİRESUN">GİRESUN<br><option value="GÜMÜŞHANE">GÜMÜŞHANE<br><option value="HAKKARİ">HAKKARİ<br><option value=HATAY>HATAY<br><option value=ISPARTA>ISPARTA<br><option value="MERSİN">MERSİN<br><option value="İSTANBUL">İSTANBUL<br><option value="İZMİR">İZMİR<br><option value=KARS>KARS<br><option value=KASTAMONU>KASTAMONU<br><option value="KAYSERİ">KAYSERİ<br><option value="KIRKLARELİ">KIRKLARELİ<br><option value="KIRŞEHİR">KIRŞEHİR<br><option value="KOCAELİ">KOCAELİ<br><option value=KONYA>KONYA<br><option value="KÜTAHYA">KÜTAHYA<br><option value=MALATYA>MALATYA<br><option value="MANİSA">MANİSA<br><option value="KAHRAMANMARAŞ">KAHRAMANMARAŞ<br><option value="MARDİN">MARDİN<br><option value="MUĞLA">MUĞLA<br><option value="MUŞ">MUŞ<br><option value="NEVŞEHİR">NEVŞEHİR<br><option value="NİĞDE">NİĞDE<br><option value=ORDU>ORDU<br><option value="RİZE">RİZE<br><option value=SAKARYA>SAKARYA<br><option value=SAMSUN>SAMSUN<br><option value="SİİRT">SİİRT<br><option value="SİNOP">SİNOP<br><option value="SİVAS">SİVAS<br><option value="TEKİRDAĞ">TEKİRDAĞ<br><option value=TOKAT>TOKAT<br><option value=TRABZON>TRABZON<br><option value="TUNCELİ">TUNCELİ<br><option value="ŞANLIURFA">ŞANLIURFA<br><option value="UŞAK">UŞAK<br><option value=VAN>VAN<br><option value=YOZGAT>YOZGAT<br><option value=ZONGULDAK>ZONGULDAK<br><option value=AKSARAY>AKSARAY<br><option value=BAYBURT>BAYBURT<br><option value=KARAMAN>KARAMAN<br><option value=KIRIKKALE>KIRIKKALE<br><option value=BATMAN>BATMAN<br><option value="ŞIRNAK">ŞIRNAK<br><option value=BARTIN>BARTIN<br><option value=ARDAHAN>ARDAHAN<br><option value="IĞDIR">IĞDIR<br><option value=YALOVA>YALOVA<br><option value="KARABÜK">KARABÜK<br><option value="KİLİS">KİLİS<br><option value="OSMANİYE">OSMANİYE<br><option value="DÜZCE">DÜZCE<br>	</select>
+</div>
+</div>
+<div class=col-md-12 id=ilce-block>
+<div class=form-group>
+<label class=control-label>İlçe</label>
+<select id=ilce2 name=ilce class="form-control new-input" disabled>
+<option selected disabled>İlçe Seçin</option>
+</select>
+</div>
+</div>
+</div>
+<div class=col-xs-24>
+<div style="margin-top:25px;margin-bottom:25px;" class="form-group col-md-24">
+<input type=checkbox name=sozlesme1 id=agreeButton class=disagreeButton> &nbsp;&nbsp; &nbsp;&nbsp;<a href="" data-toggle=modal data-target="#termsModal">
+<a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/kullanicisozlesmesi.pdf" class=text-muted><b style="    font-weight: 800;    font-size: 10px;color:red;">Kullanıcı Sözleşmesi</b></a>,
+<a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/kisiselverilerinkorunması.pdf" class=text-muted><h6 class=pwrt2><b style="    font-weight: 800;    font-size: 10px;color:red;"> Kişisel Verilerin Korunması</b></h6></a>,
+<a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/ilansozlesmesi.pdf" class=text-muted><h6 class=pwrt2><b style="    font-weight: 800;    font-size: 10px;color:red;"> İlan Sözleşmesi</b></h6></a>
+</input>
+<br><small style="margin-left: 34px;width: 100%;" class=help-block id=sozlesme-help data-fv-validator=callback data-fv-for=agree data-fv-result=INVALID style="display: block;float:left;">Lütfen Sözleşmeleri Onaylayınız</small>
+<input type=hidden name=agree value=no />
+</div>
+</div>
+<input type=hidden name=kayitform value=kayitform>
+<input type=hidden name=kayit-referer id=kayit-referer value="">
+<div class=col-xs-24>
+<button id=kayitbut type=submit data-loading-text="Kayıt Yapılıyor.." value=kayit name=submit class="btn btn-success btn-block btn-md">
+Kayıt Ol	</button>
+</div>
+<script>$("#il-degis3").change(function(){var idmiz=$(this).val();$("#ilce2").html("");$("#ilce2").append('<option disabled selected>İlçe Seçin</option>');var deger=$(this).val()-1;$.getJSON("json/il-ilce.json",function(result){$.each(result[deger]['ilceler'],function(key,value){var icerik='<option value="'+value['ilce_adi']+'">'+value['ilce_adi']+'</option>';$("#ilce2").append(icerik);});});$("#ilce2").prop("disabled",false);$("#il-degis4").val($("#veri-"+idmiz).html());});$(".disagreeButton").click(function(){if($('.disagreeButton').is(':checked')){$("#sozlesme-help").hide();}else{$("#sozlesme-help").show();}});$(".disagreeButton1").click(function(){if($('.disagreeButton1').is(':checked')){$("#sozlesme-help").hide();}else{$("#sozlesme-help").show();}});$(".disagreeButton2").click(function(){if($('.disagreeButton2').is(':checked')){$("#sozlesme-help2").hide();}else{$("#sozlesme-help2").show();}});$(".disagreeButton3").click(function(){if($('.disagreeButton3').is(':checked')){$("#sozlesme-help3").hide();}else{$("#sozlesme-help3").show();}});var validate_agree={excluded:false,validators:{callback:{message:'İlan ekleme koşullarını kabul ediniz',callback:function(value,validator,$field){return value==='yes';}}}};$(document).ready(function(){alertify.logPosition("top right");$('form#kayitForm').formValidation({framework:'bootstrap',icon:{valid:'fa fa-check',invalid:'fa fa-remove',validating:'fa fa-refresh'},fields:{kad:{validators:{stringLength:{min:2,message:'Adınız 2 karakterden az olamaz'},notEmpty:{message:'Form Alanını boş bırakmayınız'},regexp:{regexp:'^[a-zA-Z\s\ü\ğ\ş\ç\ö\Ş\Ğ\Ö\Ç\/i\/I _]*$',message:'Rakam ve özel karakter kullanmayınız '}}},ksoyad:{validators:{different:{field:'kad',message:'Soyadınız adınız ile aynı olamaz'},stringLength:{min:2,message:'Soyadınız 2 karakterden az olamaz'},notEmpty:{message:'Form Alanını boş bırakmayınız'},regexp:{regexp:'^[a-zA-Z\s\ü\ğ\ş\ç\ö\Ş\Ğ\Ö\Ç/i/I _]*$',message:'Rakam ve özel karakter kullanmayınız '}}},keposta:{validators:{emailAddress:{message:'Lütfen e-posta adresi yaziniz'},notEmpty:{message:'Form Alanını boş bırakmayınız'},regexp:{regexp:'^([a-zA-Z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$',message:'Lütfen Geçerli E-posta Adresi Giriniz'},stringCase:{message:'Caps Lock Açık','case':'lower'}}},ktelefon:{validators:{integer:{message:'Lütfen Telefon Numaranızı yazınız'},notEmpty:{message:'Form Alanını boş bırakmayınız'}}},ksifre:{validators:{stringLength:{min:8,message:'Şifreniz 8 karakterden az olamaz'},notEmpty:{message:'Form Alanını boş bırakmayınız'}}},ksifre2:{validators:{stringLength:{min:8,message:'Şifreniz 8 karakterden az olamaz'},notEmpty:{message:'Form Alanını boş bırakmayınız'},identical:{field:'ksifre',message:'Yeni şifrenizi doğrulayınız'}}},ktcno:{validators:{stringLength:{min:11,message:'Lütfen geçerli TC Kimlik Numaranızı giriniz'},notEmpty:{message:'Form Alanını boş bırakmayınız'}}}}}).on('success.form.fv',function(e){e.preventDefault();var $form=$(e.target),fv=$(e.target).data('formValidation');});$("#kayitbut").click(function(){var data=$('form#kayitForm').serialize()+"&type=user_transaction@kayitform";$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=1',data:data,beforeSend:function(){$("#kayitbut").button('loading');},success:function(cevap){$("#kayitbut").button('reset');if(cevap==0){alertify.error("Form Alanını boş bırakmayınız");}else if(cevap==2){alertify.error("Lütfen Geçerli E-posta Adresi Giriniz");}else{$('.bs-kayit-modal-md').modal('hide');if(cevap==1){alertify.success("Kayıt İşleminiz Başarılı");alertify.delay(4000).log("Kayıt işlemini tamamlamak için e-postanıza gelen bağlantıyı takip edin!");}else if(cevap==-131){alertify.delay(4000).error("E-posta Sistemde Kayıtlı! Lütfen farklı bir e-posta ile deneyiniz");}else if(cevap==-1){alertify.delay(4000).error("Lütfen Telefon Numaranızı yazınız");}else if(cevap==-3){alertify.delay(4000).error("Sözleşmeleri Onaylamalısınız. ");}else{alertify.error("Hata Oluştu: "+cevap);}}},error:function(){alertify.error("Hata Oluştu: ");}});return false;});});</script>
+</form>
+</div>
+</div>
+<div class="col-md-12 hidden-xs" id=kayitcontainer2>
+<ul class=list-group>
+<li class=list-group-item style="min-height:63px;padding-top:13px">
+<a href="giris/facebook" class="btn btn-block btn-social  btn-facebook"><span class="fa fa-facebook"></span>Facebook Ile Kayıt Ol</a>
+</li>
+<li class=list-group-item style="min-height:63px;padding-top:13px">
+<a href="giris/twitch" class="btn btn-block btn-social  btn-twitch"><span class="fa fa-twitch"></span>Twitch Ile Kayıt Ol</a>
+</li>
+<li class=list-group-item>
+<div class=ikonblock><i class="fa fa-gamepad fa-4x"></i></div>
+<div class=textblock>
+<strong>1000'den Fazla Oyun</strong><p>1000'den fazla oyunun, binlerce ürününü temin edebilirsiniz</p> </div>
+</li>
+<li class=list-group-item>
+<div class=ikonblock><i class="fa fa-shield fa-4x"></i></div>
+<div class=textblock>
+<strong>İlan Pazarı</strong><p>Birçok oyunun item, karakter ve hesap satışını gerçekleştirebilir ve banka hesabınızdan paranızı çekebilirsiniz</p> </div>
+</li>
+<li class=list-group-item>
+<div class=ikonblock><i class="fa fa-credit-card fa-4x"></i></div>
+<div class=textblock>
+<strong>Kolay ve Hızlı Ödeme Seçenekleri</strong><p>Birçok ödeme seçeneğinden faydalanabilir ve bakiye yükleyip ihtiyaçlarınızı karşılayabilirsiniz</p> </div>
+</li>
+<li class=list-group-item>
+<div class=ikonblock><i class="fa fa-comments-o fa-4x"></i></div>
+<div class=textblock>
+<strong>Canlı Destek</strong><p>Sabah 10:00 - Gece 02:00 saatleri arasında Canlı Destek Departmanımızdan yardım alabilirsiniz</p> </div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="HeadHeaderBox ">
+<div class=headTopBar>
+<div class=container>
+<div class=row>
+<div class=col-md-24 style=padding-top:5px>
+<span class="text-muted pull-left hidden-xs"><i style="display: inline" class="fa fa-lock fa-fw"></i>
+<small>Türkiye'nin En Popüler, Oyun Epin Satış, Digital Kod Alışveriş Sitesi</small>
+</span>
+<span class="hidden-xs pull-right OyunforTVBtn"><i class="fa fa-twitch"></i> <a target=_blank href="https://www.twitch.tv/oyunfor">Oyunfor TV</a></span>
+<span class="hidden-xs pull-right OyunforTVyoutube"><i class="fa fa-youtube"></i> <a target=_blank href="https://www.youtube.com/c/oyunfor">Oyunfor Tube</a></span>
+</div>
+</div>
+</div>
+</div>
+<div class=container>
+<div class="row HeadMid">
+<div class="nopm col-md-6 col-xs-24">
+<span class=siteLogo><a href="https://www.oyunfor.com"><script data-pagespeed-no-defer>//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://www.oyunfor.com/blizzard-oyunlari/wow-game-card/blizzard-wow-battle-chest-cd-key','I7egwGwOwB',true,false,'A3blca_7hyI');
+//]]></script><img src="https://www.oyunfor.com/asset/img/oyunfor-logo.png" width=206 height=403 alt=Oyunfor class="img-responsive img-center" data-pagespeed-url-hash=2895120432 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></span>
+</div>
+<div class="nopm col-md-10 col-xs-24">
+<div class="input-group siteSearchBar">
+<input type=text id=aramatxt class="form-control input-lg" style=font-size:15px placeholder="Oyun veya ürün ara">
+<span class=input-group-btn>
+<button class="btn btn-lg" id=aramabtn type=button><i class="fa fa-search fa-fw"></i></button>
+</span>
+</div>
+<div class="col-md-10 searchlist">
+<ul class=nopm>
+</ul>
+</div>
+</div>
+<div class="userMenuBox nopm col-md-8 col-xs-24">
+<div class=loginButtonPane>
+<div class=loginCase>
+<div class=balanceMenuCase>
+<div class=loginButton>
+<div class=loginText><i class="fa fa-sign-in fa-fw"></i>
+Giriş Yap </div>
+<small>Kayıt Ol </small>
+</div>
+<div class=balanceMenu>
+<a class="" rel=nofollow href="https://www.oyunfor.com/giris">Giriş Yap</a>
+<hr style="margin:5px;">
+<a class="" href="#" data-toggle=modal data-target=.bs-kayit-modal-md>Kayıt Ol</a>
+</div>
+</div>
+</div>
+</div>
+<div class=balanceCase>
+<div class=balanceButton>
+<div class=balanceIcon>
+<i class="fa fa-shopping-cart fa-2x"></i>
+<div class="Count hidden">
+</div>
+</div>
+<div class=balanceText>
+<a href=sepetim>Sepetim</a>
+</div>
+</div>
+<div class=balanceBasketMenu>
+<ul class=nopm>
+<li class="text-center text-danger alert" style=height:auto>Sepetinizde Ürün Bulunmamaktadır!</li>
+</ul>
+<a class="btn btn-block" href=sepetim>Sepete Git</a>
+</div>
+</div>
+</div>
+<script>$(document).ready(function(){$('.loginCase,.balanceCase').mouseenter(function(e){e.stopPropagation();$('#darkness').fadeTo(100,1,function(){$(this).show();});});$('.loginCase,.balanceCase').mouseleave(function(){$('#darkness').fadeTo(100,0,function(){$(this).hide();});});});$("#link-cikis").click(function(){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=1',data:$('form#cikisform').serialize()+"&type=user_transaction@cikisform",success:function(cevap){document.location.reload();alertify.success("Çıkış Yapıldı");},error:function(){alertify.error("Hata Oluştu!!");}});return false;});$('.siteSearchBar input[type="text"]').on("keyup",function(){var txt=$(this).val();if(txt.length>1){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=14',data:{"type":"search@WebsiteArama","WebsiteArama":txt},beforeSend:function(){$('.searchlist ul').html('Yükleniyor')},success:function(cevap){if(cevap==""){$('.searchlist ul').html("Sonuç Bulunamadı");}else{$('.searchlist ul').html(cevap);$('.searchlist').css({"display":"block"});}},error:function(){}});}else{$('.searchlist').css({"display":"none"});}});</script>
+</div>
+</div>
+<div class=HeadNavBox>
+<div class=container>
+<div class=row>
+<div class=col-md-24>
+<div class=row>
+<nav class=navbar>
+<div class=container-fluid>
+<div class=navbar-header style="padding:0px;">
+<a class="mobilfixMenuLogo hidden hidden-md hidden-sm hidden-lg" href="https://www.oyunfor.com"><img src="https://www.oyunfor.com/asset/img/oyunfor-logo.png" width=120 height=25 alt=Oyunfor class=img-responsive data-pagespeed-url-hash=2895120432 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+<button type=button class="navbar-toggle collapsed pull-right" data-toggle=collapse data-target="#bs-example-navbar-collapse-1" aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class="fa fa-list-ul fa-2x fa-fw"></span>
+</button>
+<ul style="float:left; margin-left:4px;" class="navbar-toggle nav navbar-nav">
+<li style="float:left;"><a href="https://www.oyunfor.com/ilanlar">İLAN PAZARI</a></li>
+<li style="float:left;"><a href="https://www.oyunfor.com/profil/bakiye-yukle"><i class="fa fa-plus fa-fw"></i>BAKİYE YÜKLE</a></li>
+</ul>
+<a href="https://www.oyunfor.com/sepetim" class="sepetFixBtn btn hidden hidden-md hidden-sm hidden-lg"><i class="fa fa-shopping-cart"></i> Sepetim</a>
+</div>
+<div class=row>
+<div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+<ul class="nav navbar-nav">
+<li class="miniFixLogo hidden hidden-xs"><span class=siteLogo><a href="https://www.oyunfor.com"><img src="https://www.oyunfor.com/asset/img/oyunfor-logo.png" width=144 height=30 alt=Oyunfor class="" data-pagespeed-url-hash=2895120432 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></span></li>
+<li class="active anasayfabtn"><a href="https://www.oyunfor.com">ANASAYFA <span class=sr-only>(current)</span></a>
+</li>
+<li><a href="https://www.oyunfor.com/oyunlar">TÜM OYUNLAR</a></li>
+<li><a href="https://www.oyunfor.com/ilanlar">İLAN PAZARI</a></li>
+<li class=secretDivs><a href="https://www.oyunfor.com/indirimli-urunler">İNDİRİMDEKİLER</a></li>
+</ul>
+<ul class="nav navbar-nav">
+<li class="hidden-sm hidden-md hidden-lg"><a href="https://www.oyunfor.com/profil/bakiye-yukle"><i class="fa fa-plus fa-fw"></i>BAKİYE YÜKLE</a></li></ul>
+<div class="nav navbar-nav">
+<div class="input-group siteFixNavSearchBar hidden hidden-xs hidden-sm">
+<input type=text class="form-control input-sm" placeholder=Arama>
+<span class=input-group-btn>
+<button class="btn btn-sm" type=button><i class="fa fa-search fa-fw"></i></button>
+</span>
+</div>
+<div class="col-md-4 searchlistFix">
+<ul class=nopm>
+</ul>
+</div>
+</div>
+<script>$('.siteFixNavSearchBar input[type="text"]').on("keyup",function(){var txt=$(this).val();if(txt.length>2){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=14',data:{"type":"search@WebsiteArama","WebsiteArama":txt},beforeSend:function(){$('.searchlistFix ul').html('Yükleniyor')},success:function(cevap){if(cevap==""){$('.searchlistFix ul').html("Sonuç Bulunamadı");}else{$('.searchlistFix ul').html(cevap);$('.searchlistFix').css({"display":"block"});}},error:function(){}});}else{$('.searchlistFix').css({"display":"none"});}});$('html').on('click',function(event){var target=$(event.target);if(target.is('.siteSearchBar')||target.parents('.searchlistFix ul li').size()>0)return;$('.searchlistFix').css({"display":"none"});$('.siteFixNavSearchBar input[type="text"]').val("");});</script>
+<ul class="nav navbar-nav pull-right hidden-xs">
+<li>
+<a href=sepetim class="balanceIcon nopm hidden">
+<i class="fa fa-shopping-cart fa-2x"></i>
+<div class="Count hidden">
+</div>
+</a>
+</li>
+<li><a href="https://www.oyunfor.com/profil/bakiye-yukle"><i class="fa fa-plus fa-fw"></i>BAKİYE YÜKLE</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>$('.exchangeBox .exchangePanel .exchangeMenu li').on("click",function(){$('.exchangeBox .exchangePanel .exchangeMenu li').removeClass("yellowColor");$(this).addClass("yellowColor");var id=$(this).data("id");$('.exchangeBox .exchangePanel .exchangeContent').addClass("hidden");$('.exchangeBox .exchangePanel #'+id+"a").removeClass("hidden");});var tuttur=0;$('.tuttur').click(function(){if(tuttur==0){$(this).find("span").html("Sabiti Kaldır");$(this).addClass("yellowText");tuttur=1;}else{$(this).find("span").html("Sabitle");$(this).removeClass("yellowText");tuttur=0;}});$('.exchangeBox .exchangeBtn').on("click",function(e){if($('.exchangeBox').css('margin-right')=="-300px"){$('.exchangeBox').animate({"margin-right":"0px"},"fast");$('.exchangeBox .exchangeBtn').css({"background-position":"-46px 8px"});}else{$('.exchangeBox').animate({"margin-right":"-300px"},"fast");$('.exchangeBox .exchangeBtn').css({"background-position":"3px 8px"});}});</script>
+<div class=container>
+<div class=row><ol id=breadcrumb class="breadcrumb breadcrumb-arrow"><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop=url title=Oyunfor href="https://www.oyunfor.com"><span itemprop=title>Anasayfa</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop=url title=Blizzard href="https://www.oyunfor.com/blizzard-oyunlari"><span itemprop=title>Blizzard</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop=url title="WOW Legion Cd Key - Game Time - Gift Card" href="https://www.oyunfor.com/blizzard-oyunlari/wow-game-card"><span itemprop=title>WOW Legion Cd Key - Game Time - Gift Card</span></a></li><li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop=url title="Wow EU Battle Chest CD Key" href="https://www.oyunfor.com/blizzard-oyunlari/wow-game-card/blizzard-wow-battle-chest-cd-key"><span itemprop=title>Wow EU Battle Chest CD Key</span></a></li></ol></div> <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "WebPage",
+                        "name": "Wow EU Battle Chest CD Key",
+                        "description": "Wow EU Battle Chest CD Key",
+                        "breadcrumb": "Anasayfa > Blizzard         > WOW Legion Cd Key - Game Time - Gift Card > Wow EU Battle Chest CD Key"
+                    }
+
+    </script>
+<span itemscope itemtype="http://schema.org/Product">
+<div class="modal fade" id=SiparisModal tabindex=-1 role=dialog aria-labelledby="Terms and conditions" aria-hidden=true style="padding-top:15%">
+<div class=modal-dialog>
+<div class=modal-content>
+<div class="modal-header text-success">
+<div class=modal-title>Teslimat Uyarısı</div>
+</div>
+<div class="modal-body text-center alert alert-info" style=font-size:14px>
+Bu ürünün teslimatı <br/>
+<b>Notice</b>: Undefined index: wow-game-card in <b>/var/www/oyunforcom/buy.php</b> on line <b>143</b><br/>
+:00, <br/>
+<b>Notice</b>: Undefined index: wow-game-card in <b>/var/www/oyunforcom/buy.php</b> on line <b>144</b><br/>
+:00 saatleri arasında yapılmaktadır.<br>
+Belirtilen zaman aralığında sipariş verebilirsiniz.<br>
+</div>
+<div class=modal-footer>
+<button type=button class="btn btn-danger" id=disagreeButton data-dismiss=modal>Kapat</button>
+</div>
+</div>
+</div>
+</div>
+<div class="row containerWhite" style=padding-bottom:15px>
+<div class=col-md-24>
+<div class=futuredBPane>
+<div class=futuredBBlock>
+<div class="col-md-6 nopm">
+<div class=futuredBHead>
+<img width=263px height=263px src="https://www.oyunfor.com/imgStorage/productImg/blizzard-wow-battle-chest-cd-key.png" alt="Wow EU Battle Chest CD Key" data-pagespeed-url-hash=2792301680 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+</div>
+</div>
+<div class="col-md-12 nopm">
+<div class=futuredBContent>
+<h1 class=futuredBMid itemprop=name>Wow EU Battle Chest CD Key</h1>
+<div class=futuredBMidBot>Cd Key + 30 Days</div>
+<h2 class=hidden>World Of WarCraft (Wow) Battle Chest (CD Key + 30 Days) Satın Al</h2>
+<div class=futuredBBotInfo>
+<div class="alert alert-info" style="margin-bottom:0px;">
+<i class="fa fa-exclamation-circle"></i>
+Battle Chest (EU Classic - The Burning Crusade - Wrath Of The Lich King - Cataclysm - Mists Of Pandaria- Warlords of Draenor&nbsp;- 30 Gun Oynama Suresi icerir ) CD Key </div>
+</div>
+<div class=futuredBBotCount>
+<script>$(document).ready(function(){$.yenihesaplama=function(adet){var onTutar=$(".totalsProduct tr:eq(0) th span").html()
+var fiyat=onTutar-$(".totalsProduct tr:eq(1) th span").html()
+$('#TotalTab').html(parseFloat(fiyat*adet).toFixed(2));}
+$('#urunadet').val(1);$.chng=function(st){if($('#urunadet').val()>=1){var adets=$('#urunadet').val();if(st==1){$('#urunadet').val(parseInt(adets)+1);}else{if(adets>1)$('#urunadet').val(parseInt($('#urunadet').val())-1);}adetBakiye=$('#urunadet').val();$.yenihesaplama($('#urunadet').val());}}
+$('#urunadet').on("keyup",function(){var adet=parseInt($(this).val()).toFixed(2);if(adet>1){$.yenihesaplama(adet);}else{$('#urunadet').val(1);$.yenihesaplama(1)}});});</script>
+<div class="input-group spinner">
+<input id=urunadet style="background: #fff;" type=text class=form-control value="" min=1 maxlength=5 placeholder=Adet>
+<div class=input-group-btn-vertical>
+<button class="btn btn-default" onclick="$.chng(1);" type=button><i class="fa fa-caret-up"></i></button>
+<button class="btn btn-default" onclick="$.chng(0);" type=button><i class="fa fa-caret-down"></i></button>
+</div>
+</div>
+</div>
+<form action="" id=extraInputs>
+<div class=futuredBBotInfo>
+</div>
+<div class=futuredBBotForm>
+</div>
+</form>
+</div>
+</div>
+<script>var sayac={tnow:'1524994720',sure:new Array()}</script>
+<div class="col-md-6 col-xs-24 nopm">
+<div class=fBInfo>
+<script>sayac.sure[0]=1525024803;</script>
+<div> %8 İndirim</div>
+<div id=s0 class=fLast></div>
+</div>
+<script>function saat(sn){var sa=0;var dk=0;var d=0;var s=0;s=sn%60;sn=parseInt(sn)-parseInt(s);dk=sn/60;d=dk%60;dk=parseInt(dk)-parseInt(d);sa=dk/60;if(s<=9)s='0'+s;if(d<=9)d='0'+d;if(sa<=9)sa='0'+sa;return sa+':'+d+':'+s;}var m;function say(){for(var i=0;i<sayac.sure.length;i++){if((parseInt(sayac.sure[i])-parseInt(sayac.tnow))<0)$('#s'+i).css('display','none');else
+$('#s'+i).html(saat(parseInt(sayac.sure[i])-parseInt(sayac.tnow)));}sayac.tnow=parseInt(sayac.tnow)+1;}$(document).ready(function(){clearInterval(m);m=setInterval(function(){say()},1000);say();});</script>
+<div itemprop=offers itemscope itemtype="http://schema.org/Offer">
+<link itemprop=availability href="http://schema.org/InStock"/>
+<table class="table table-hover totalsProduct">
+<tbody>
+<tr>
+<td>Fiyat</td>
+<td class=text-center>:</td>
+<th><span id=fiyatTab>49.00</span> <i class="fa fa-try"></i></th>
+</tr>
+<tr>
+<td>İndirim</td>
+<td class=text-center>:</td>
+<th><span id=indirimTab>4.1</span> <i class="fa fa-try"></i></th>
+</tr>
+<tr>
+<td>Toplam</td>
+<td class=text-center>:</td>
+<th><span id=TotalTab itemprop=price>44.9</span> <i class="fa fa-try" itemprop=priceCurrency content=TL></i></th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-24 nopm">
+<hr>
+<div class="col-md-12 col-xs-24">
+<div class=InfoStatus></div>
+<div class=InfoBasket><p class=text-center style="margin: 0px;">Ürün Sepetinize Eklendi</p></div>
+</div>
+<div class="col-md-12 col-xs-24">
+<div id=futuredBotButtonDiv class="futuredBot text-right">
+<button id=hemenalBut class="fbuy btn btn-lg btn-success" onclick="$.HemenAl(1607,$('#urunadet').val());">Ödeme Yap</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id=termsModal tabindex=-1 role=dialog aria-labelledby="" aria-hidden=true>
+<div id=modal_dialog class=modal-dialog style="width: 670px; margin: 176px auto;">
+<div class=modal-content>
+<div class="modal-header text-success">
+<h3 class=modal-title>Satın Alma Sözleşmesi</h3>
+</div>
+<ol>
+<li style="margin-bottom: 25px;"><h5> Teslim aldığım ürünü oyun içinde kendini oyunfor çalışanı olarak tanıtan kimseye<span style=color:red><b> iade etmeyeceğim.</b></span></h5></li>
+<li style="margin-bottom: 25px;"><h5> Oyun içerisinde kendini oyunfor çalışanı olarak tanıtan kimseyle giriş bilgilerimi (email,telefon, oyunfor.com giriş bilgisi, oyun kullanıcı adı şifre v.b.)<span style=color:red><b> paylaşmayacağım.</b></span></h5></li>
+<li><h5> Yukarıda belirtilen uyarıları okudum ve uyarılarda belirtilen nedenlerden kaynaklanabilecek hesap veya oyun içi ürün çalınması durumunda<span style=color:red><b> sorumluluk bana aittir.</b></span></h5></li>
+</ol>
+<div class=form-group>
+<div class="col-xs-14 col-xs-offset-10" style="margin-top: 19px;">
+<div id=check_input class=checkbox>
+<label style="padding-left: 3px;">
+<input type=checkbox name=agree value=agree style="margin-top:1px;" id=agreeButton class=disagreeButton />Yukarıda belirtilen uyarıları, maddeleri okudum ve kabul ediyorum
+</label>
+</div>
+</div>
+</div>
+<div class=modal-footer>
+<div class=row>
+<div class=col-md-24 style="margin-top: 25px;">
+<button type=button disabled class="btn btn-success btn-lg" id=KabulEt data-dismiss=modal>Kabul et	</button>
+<button type=button class="btn btn-danger btn-lg" id=RedDEt data-dismiss=modal>Reddet</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id=termsModalUyari tabindex=-1 role=dialog aria-labelledby="" aria-hidden=true>
+<div id=modal_dialog class=modal-dialog style="width: 670px; margin: 176px auto;">
+<div class=modal-content>
+<div class="modal-header text-success">
+<h3 class=modal-title>UYARI</h3>
+</div>
+<div class=form-group><div class=col-md-24 style="margin-top: 19px;"><div class="alert alert-info" id=uyariAlertFiyat>
+</div></div>
+</div>
+<div class=modal-footer>
+<div class=row>
+<div class=col-md-24 style="margin-top: 25px;">
+<button type=button class="btn btn-success btn-lg" id=KabulEtFiyat data-dismiss=modal>Evet
+</button>
+<button type=button class="btn btn-danger btn-lg" id=RedDEtFiyat data-dismiss=modal>Hayır</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>$(document).ready(function(){$('#termsModal').formValidation({framework:'bootstrap',icon:{valid:'fa fa-check',invalid:'fa fa-remove',validating:'fa fa-refresh'},button:{selector:'#KabulEt',disabled:'disabled'},fields:{agree:{validators:{notEmpty:{message:'İlan ekleme koşullarını kabul ediniz'}}}}});});function hemenAlBut(urun_id,urun_fiyat){$('#termsModal').modal('show');$("#KabulEt").attr("name",urun_id);$("#KabulEt").attr("price",urun_fiyat);};$("#KabulEt").click(function(){var urunadet=$('#urunadet').val();var urun_id=$(this).attr("name");var urun_fiyat=$(this).attr("price");$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=12',data:"type=productBuy@fiyatKontrol&urun_id="+urun_id+"&urun_fiyat="+urun_fiyat+"&urunadet="+urunadet,dataType:'json',success:function(cevap){if(cevap['status']==1){$.HemenAl(urun_id,urunadet);}else{$('#termsModal').modal('hide');$('#termsModalUyari').modal('show');$('#uyariAlertFiyat').html("Ürünün Adet Fiyatı "+cevap['price']+" olarak değişmiştir. Yinede Satın Almak İstiyor musunuz ?")
+$('#KabulEtFiyat').attr("name",urun_id);}}});});$("#KabulEtFiyat").click(function(){var urunadet=$('#urunadet').val();var urun_id=$(this).attr("name");$.HemenAl(urun_id,urunadet);});$('.fbasket').on("click",function(){var adet=$('#urunadet').val();$.AddBasketNow(1607,adet,1);});$('.spinner .btn:first-of-type').on('click',function(){var btn=$(this);var input=btn.closest('.spinner').find('input');if(input.attr('max')==undefined||parseInt(input.val())<parseInt(input.attr('max'))){input.val(parseInt(input.val(),10));}else{btn.next("disabled",true);}});$('.spinner .btn:last-of-type').on('click',function(){var btn=$(this);var input=btn.closest('.spinner').find('input');if(input.attr('min')==undefined||parseInt(input.val())>parseInt(input.attr('min'))){input.val(parseInt(input.val(),10));}else{btn.prev("disabled",true);}});</script>
+</div>
+<div class=row>
+<div id=exTab class="containerWhite nopm">
+<ul class="nav nav-pills hidden-xs">
+<li class=active>
+<a href="#1b" data-toggle=tab>Yorumlar (7 )</a>
+</li>
+</ul>
+<div class=tab-content style="margin-bottom: 20px;">
+<div class="tab-pane active clearfix" id=1b>
+<div class=col-md-24>
+<div id=commentTablePane>
+<div class="col-md-4 hidden-xs">
+<div class=futuredBHead>
+<img width=125px height=125px src="https://www.oyunfor.com/imgStorage/productImg/blizzard-wow-battle-chest-cd-key.png" alt="Wow EU Battle Chest CD Key" data-pagespeed-url-hash=2792301680 onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+</div>
+</div>
+<div class="col-md-16 hidden-xs">
+<div class=ratings-table>
+<div class="ratings-row  ">
+<div class=ratings-image-and-text>
+<div class=rating-img-col>
+<div class=ratings-container>
+<div class=ratings>
+<div class="ratings active" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<div class=rating-text-col>
+<div class=rating-text>Mükemmel</div>
+<span class="rating-count hidden">(100 )</span>
+</div>
+</div>
+<div class=rating-percentage-col>
+<span class=percent>%100</span>
+<span class=rating-percentage style="width: 100%"></span>
+</div>
+</div>
+<div class=ratings-row>
+<div class=ratings-image-and-text>
+<div class=rating-img-col>
+<div class=ratings-container>
+<div class=ratings>
+<div class="ratings active" style="width: 80%"></div>
+</div>
+</div>
+</div>
+<div class=rating-text-col>
+<div class=rating-text>Çok İyi</div>
+<span class="rating-count hidden">(0 )</span>
+</div>
+</div>
+<div class=rating-percentage-col>
+<span class=percent>%0</span>
+<span class=rating-percentage style="width: 0%"></span>
+</div>
+</div>
+<div class="ratings-row  ">
+<div class=ratings-image-and-text>
+<div class=rating-img-col>
+<div class=ratings-container>
+<div class=ratings>
+<div class="ratings active" style="width: 60%"></div>
+</div>
+</div>
+</div>
+<div class=rating-text-col>
+<div class=rating-text>İyi</div>
+<span class="rating-count hidden">(0 )</span>
+</div>
+</div>
+<div class=rating-percentage-col>
+<span class=percent>%0</span>
+<span class=rating-percentage style="width: 0%"></span>
+</div>
+</div>
+<div class="ratings-row  ">
+<div class=ratings-image-and-text>
+<div class=rating-img-col>
+<div class=ratings-container>
+<div class=ratings>
+<div class="ratings active" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<div class=rating-text-col>
+<div class=rating-text>Fena Değil</div>
+<span class="rating-count hidden">(0 )</span>
+</div>
+</div>
+<div class=rating-percentage-col>
+<span class=percent>%0</span>
+<span class=rating-percentage style="width: 0%"></span>
+</div>
+</div>
+<div class="ratings-row  ">
+<div class=ratings-image-and-text>
+<div class=rating-img-col>
+<div class=ratings-container>
+<div class=ratings>
+<div class="ratings active" style="width: 20%"></div>
+</div>
+</div>
+</div>
+<div class=rating-text-col>
+<div class=rating-text>Çok Kötü</div>
+<span class="rating-count hidden">(0 )</span>
+</div>
+</div>
+<div class=rating-percentage-col>
+<span class=percent>%0</span>
+<span class=rating-percentage style="width: 0%"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-xs-24">
+<div class=average-ratings itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating">
+<div class=average-rating>Ortalama Puan</div>
+<div class="product-rating ratings-container bigger">
+<div class=ratings>
+<div class="ratings active" style="width: 100%">
+5 </div>
+</div>
+</div>
+<div class=rating-number itemprop=ratingValue>
+5 </div>
+<span style=display:none itemprop=reviewCount>7</span>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-md-24 text-center lead"></div>
+<div class="col-md-24 text-center lead">Yorum yapmak için <strong><a href=giris rel=nofollow>giriş</a></strong> yapmalısınız!</div>
+<div id=commentstatsInfo class="col-md-24 text-center lead"></div>
+</div>
+<div id=commentsRollerPane>
+</div>
+</div>
+</div>
+<script>$(document).ready(function(){var totyorum={max:7,cur:10}
+$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=18',data:{"type":"yorumlar@UrunYorumGoster","YorumPid":1607,"YorumKatid":0,"YorumAltKatid":0,"YorumRec":0},beforeSend:function(){},success:function(cevap){totyorum.cur+=0;if(totyorum.cur>=totyorum.max)$('#viewMoreComments').css('display','none');$('#commentsRollerPane').html(cevap);$('.yoneticiYorumSil').on("click",function(){var yorum_id=this.id;$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=18',data:"type=yorumlar@yorum_sil&yorum_id="+yorum_id,success:function(cevap){if(cevap==1){$('#CommentPanel'+yorum_id).remove();}else{alertify.error("Hata Oluştu!!");}}});});},error:function(){alertify.error("Hata Oluştu!!");}});$('#viewMoreComments').on("click",function(){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=18',data:{"type":"yorumlar@UrunYorumGoster","YorumPid":1607,"YorumKatid":0,"YorumAltKatid":0,"YorumRec":totyorum.cur},beforeSend:function(){},success:function(cevap){totyorum.cur+=10;if(totyorum.cur>=totyorum.max)$('#viewMoreComments').css('display','none');$('#commentsRollerPane').append(cevap);$('.yoneticiYorumSil').on("click",function(){var yorum_id=this.id;$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=18',data:"type=yorumlar@yorum_sil&yorum_id="+yorum_id,success:function(cevap){if(cevap==1){$('#CommentPanel'+yorum_id).remove();}else{alertify.error("Hata Oluştu!!");}}});});},error:function(){alertify.error("Hata Oluştu!!");}});});});</script>
+<div class=tab-pane id=2b>
+<div class=OnemliDivs>
+</div>
+</div>
+</div>
+</div>
+</div>
+</span>
+</div>
+<div class="FootBottomBox hidden-xs">
+<div class=container>
+<div class=row>
+<div class="col-xs-24 col-sm-12 col-lg-6 hidden-xs">
+<div class=box>
+<div class=icon>
+<p class=title>Hızlı Teslimat</p>
+<div class=image><i class="fa fa-thumbs-o-up"></i></div>
+<div class=info>
+<p class="">
+Alışverişlerinizde En Hızlı Teslimat </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-24 col-sm-12 col-lg-6 hidden-xs">
+<div class=box>
+<div class=icon>
+<p class=title>Güvenli Alışveriş</p>
+<div class=image><i class="fa fa-lock"></i></div>
+<div class=info>
+<p>
+Tek Tıkla Güvenli Alışveriş </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-24 col-sm-12 col-lg-6 hidden-xs">
+<div class=box>
+<div class=icon>
+<p class=title>Canlı Destek</p>
+<div class=image><i class="fa fa-comments-o"></i></div>
+<div class=info>
+<p>
+Sabah 10:00 ile Gece 02:00 Arasında Hizmetinizde </p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-24 col-sm-12 col-lg-6 hidden-xs">
+<div class=box>
+<div class=icon>
+<p class=title>%100 Memnuniyet</p>
+<div class=image><i class="fa fa-smile-o fa-3x"></i></div>
+<div class=info>
+<p>
+Müşterilerimize %100 Memnuniyet Garantisi </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class=row>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><a href="https://www.oyunfor.com/hakkimizda" class=text-muted><h6 class=pwrt2>Hakkımızda</h6></a></li>
+<li><a href="https://www.oyunfor.com/is-ortakligi" class=text-muted><h6 class=pwrt2>İş Ortaklığı</h6></a></li>
+<li><a href="https://www.oyunfor.com/iletisim" class=text-muted><h6 class=pwrt2>Bize Ulaşın</h6></a></li>
+<li><a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/kisiselverilerinkorunmasi.pdf" class=text-muted><h6 class=pwrt2>Kişisel Verilerin Korunması</h6></a></li>
+<li><a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/ilansozlesmesi.pdf" class=text-muted><h6 class=pwrt2> İlan Sözleşmesi</h6></a></li>
+<br>
+<br>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><a href="#" data-toggle=modal data-target=.bs-kayit-modal-md class=text-muted>Kayıt Ol</a></li>
+<li><a href="https://www.oyunfor.com/giris" rel=nofollow class=text-muted>Giriş Yap</a></li>
+<li><a href="https://www.oyunfor.com/profil/bilgilerim" class=text-muted>Profilim</a></li>
+<li><a href="#" data-target="#pwdModal" data-toggle=modal class=text-muted>Şifremi Unuttum!</a></li>
+<li><a rel=nofollow target=_blank href="https://www.oyunfor.com/mediaPage/pdf/kullanicisozlesmesi.pdf" class=text-muted>Kullanıcı Sözleşmesi</a></li>
+<br>
+<br>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><a href="https://www.oyunfor.com/sss" class=text-muted>Sıkça Sorulan Sorular</a></li>
+<li><a href="https://www.oyunfor.com/media/nasilsatarim" class=text-muted>Nasıl Satarım?</a></li>
+<li><a href="https://www.oyunfor.com/media/nasilalirim" class=text-muted>Nasıl Alırım?</a></li>
+<li><a href="https://www.oyunfor.com/sikayetvar" class=text-muted>Öneri ve Şikayet</a></li>
+<li style="margin-top: 20px;"><span class=text-muted style="font-weight:bold;">Oyunfor Kariyer</span></li>
+<li><a href="https://www.eleman.net/oyunfor_f481268.html" rel=nofollow target=_blank class=text-muted>Eleman.net</a></li>
+<li><a href="http://www.kariyer.net/is-ilanlari/#&ckw=oyunfor" rel=nofollow target=_blank class=text-muted>Kariyer.net</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 hidden-xs">
+<ul class=list-unstyled>
+<li width=200px><strong>Bizi Takip Edin</strong></li>
+<li><a rel=nofollow href="https://www.facebook.com/OyunFor/" class="btn btn-block btn-social-icon btn-facebook">
+<span class="fa fa-facebook"></span>
+</a>
+</li>
+<li><a rel=nofollow href="https://twitter.com/oyunfor" class="btn btn-block btn-social-icon btn-twitter">
+<span class="fa fa-twitter"></span>
+</a>
+</li>
+<li><a rel=nofollow href="https://plus.google.com/+oyunfor" class="btn btn-block btn-social-icon btn-google">
+<span class="fa fa-google"></span>
+</a>
+</li>
+<li><a rel=nofollow href="https://www.youtube.com/oyunfor" class="btn btn-block btn-social-icon btn-youtube">
+<span class="fa fa-youtube"></span>
+</a>
+</li>
+<li><a rel=nofollow href="https://www.linkedin.com/company/10543167" class="btn btn-block btn-social-icon btn-linkedin">
+<span class="fa fa-linkedin"></span>
+</a>
+</li>
+<li><a rel=nofollow href="https://www.instagram.com/oyunfor/" class="btn btn-block btn-social-icon btn-instagram">
+<span class="fa fa-instagram"></span>
+</a>
+</li>
+<li><a rel=nofollow href="http://www.twitch.tv/oyunfor" class="btn btn-block btn-social-icon btn-twitch">
+<span class="fa fa-twitch"></span>
+</a>
+</li>
+</ul>
+<hr>
+<ul class=list-unstyled>
+<li>
+<div id=mc_embed_signup>
+<form action="//oyunfor.us13.list-manage.com/subscribe/post?u=860e8a46d0ac33571ee093720&amp;id=24f58fbfb3" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
+<div id=mc_embed_signup_scroll>
+<div for=mce-EMAIL><strong>Kampanyalardan Haberdar Ol</strong></div>
+<div class=input-group>
+<input type=email value="" name=EMAIL class=form-control id=mce-EMAIL placeholder=E-posta required>
+<span class=input-group-btn>
+<div style="position: absolute; left: -5000px;" aria-hidden=true><input type=text name=b_860e8a46d0ac33571ee093720_24f58fbfb3 tabindex=-1 value=""></div>
+<button type=submit value="Abone Ol" name=subscribe id=mc-embedded-subscribe class="btn btn-default">Kayıt Ol</button>
+</span>
+</div>
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+<div class="hidden-xs col-sm-24 col-md-6">
+<ul class=list-unstyled>
+<li><strong>Destek & İletişim</strong><li>
+<li class=text-muted style="font-size:1.6em;"><i class="fa fa-phone fa-fw"></i><strong>0 850 302 88 01</strong></li>
+<hr>
+<li class=text-muted><i class="fa fa-envelope-o fa-fw"></i><strong>iletisim@oyunfor.com</strong></li>
+</br>
+<li class=text-muted style=font-size:.8em>Gönderdiğiniz mesajlar canlı destek ekibimiz tarafından mesai başlangıcında değerlendirmeye alınır</li>
+</ul>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><img src="https://www.oyunfor.com/asset/img/globalsign_blue.png" alt="Global Sign SSL Serifikası" width=125 height=50 data-pagespeed-url-hash=3717786897 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><a href="https://play.google.com/store/apps/details?id=com.oyunfor.yazilim3.oyunfor" target=_blank><img src="https://www.oyunfor.com/asset/img/GooglePlay.png" alt="Google Android App" width=125 height=50 data-pagespeed-url-hash=2414476755 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+<ul class=list-unstyled>
+<li><a href="https://www.oyunfor.com/twitch-donate" title="Twitch Donate" target=_blank><img src="https://www.oyunfor.com/asset/img/twitch.png" alt="Twitch Donate" width=145 height=50 data-pagespeed-url-hash=1605726485 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 hidden-xs">
+</div>
+<div class="hidden-xs col-sm-24 col-md-6">
+</div>
+</div>
+<hr>
+<div class="row hidden-xs">
+<div class=col-md-24>
+<div class=nbs-flexisel-container><div class=nbs-flexisel-inner>
+<ul id=flexiselDemo3>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/bank.png" alt=bank data-pagespeed-url-hash=105157302 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/maestro.png" alt=maestro data-pagespeed-url-hash=2523774415 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/mastercard.png" alt=mastercart data-pagespeed-url-hash=2668250492 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/visa.png" alt=visa data-pagespeed-url-hash=970509423 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/skrill.png" alt=skrill data-pagespeed-url-hash=1177590933 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/papara.png" alt=papara data-pagespeed-url-hash=1604489339 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/paypal.png" alt=paypal data-pagespeed-url-hash=905659757 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/alpiay.png" alt=alipay data-pagespeed-url-hash=2699169110 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/qiwi.png" alt=qiwi data-pagespeed-url-hash=1599794316 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/webmny.png" alt=webmny data-pagespeed-url-hash=919390226 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/yandexmny.png" alt=yandexmny data-pagespeed-url-hash=2677814707 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+<li><img src="https://www.oyunfor.com/asset/img/payimg/yeni/union.png" alt=unipay data-pagespeed-url-hash=3803463051 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></li>
+</ul></div></div>
+</div>
+</div>
+<script>$("#flexiselDemo3").flexisel({visibleItems:8,itemsToScroll:6,animationSpeed:1500,infinite:false,autoPlay:{enable:false,interval:3000,pauseOnHover:true},responsiveBreakpoints:{portrait:{changePoint:480,visibleItems:1,itemsToScroll:1},landscape:{changePoint:640,visibleItems:2,itemsToScroll:2},tablet:{changePoint:768,visibleItems:3,itemsToScroll:3}}});</script>
+<hr>
+<div class=row>
+<div class="col-xs-24 col-md-16">
+<ul class="list-unstyled list-inline pull-left">
+<li><a onclick="return false" href="#">Kullanım Koşulları</a></li>
+<li><a onclick="return false" href="#">Site Haritası</a></li>
+</ul>
+</div>
+<div class="col-xs-24 col-md-8">
+<p class="text-muted pull-right">Oyunfor © 2018</p>
+</div>
+</div>
+</div>
+</div>
+<script>function fatura_modal(islem,deger=null,deger2=null,deger3=null){$("#fatura-degiskeni").attr("data-value",islem);$("#fatura-degiskeni").attr("data-urun-id",deger);$("#fatura-degiskeni").attr("data-urun-adet",deger2);if(deger3!=null){$("#fatura-degiskeni").attr("data-urun-deger",deger3);}}var header=$('.HeadHeaderBox').outerHeight();$(window).scroll(function(){if($(window).scrollTop()>header-100){$("body").css("padding-top",header);$('.HeadHeaderBox').addClass("HeaderFix");$('.headTopBar,.HeadMid').hide();$('.miniFixLogo').removeClass("hidden");$('.mobilfixMenuLogo').removeClass("hidden");$('.sepetFixBtn').removeClass("hidden");$('.anasayfabtn').addClass('hidden');$('.siteFixNavSearchBar').removeClass('hidden');$('.searchlistFix').removeClass('hidden');$('.secretDivs').addClass("hidden");$('.navbar-nav .balanceIcon').removeClass('hidden');}else{$("body").css("padding-top",0);$('.HeadHeaderBox').removeClass("HeaderFix");$('.headTopBar,.HeadMid').show();$('.miniFixLogo').addClass("hidden");$('.mobilfixMenuLogo').addClass("hidden");$('.sepetFixBtn').addClass("hidden");$('.anasayfabtn').removeClass('hidden');$('.siteFixNavSearchBar').addClass('hidden');$('.searchlistFix').addClass('hidden');$('.secretDivs').removeClass("hidden");$('.navbar-nav .balanceIcon').addClass('hidden');}});if($('.balanceBasketMenu ul li').length==0){$('.balanceBasketMenu ul').html('<div class="text-center text-default">Sepetinizde Ürün Bulunmamaktadır!</div>');}$.AddBasketNow=function(id,adet,durum){var inputs=$('#extraInputs').serialize();if(inputs==false){inputs=""}$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=15',data:{"type":"sepet@AddBasketNow","AddBasketNow":id,"pQty":adet,"status":durum,"inputs":inputs},beforeSend:function(){$(this).prop('disable',true);},success:function(cevap){$('.balanceBasketMenu ul').html(cevap);var count=$('.balanceBasketMenu ul li').length;if(count!=0){$('.balanceIcon .Count').removeClass("hidden");$('.balanceIcon .Count').html(count);}else{$('.balanceBasketMenu ul').html('<div class="text-center text-default">Sepetinizde Ürün Bulunmamaktadır!</div>');$('.balanceIcon .Count').addClass("hidden");}if(durum==0||durum==4||durum==8){$('#darkness').fadeTo(100,0,function(){$(this).hide();});$('#S'+id).remove();var sepetCount=$('#SepetTable tbody tr').length;if(sepetCount<1){$('#sepetPanelDivs>table').remove();$('#sepetPanelDivs').prepend('<div class="lead text-center">Sepetinizde Ürün Bulunmamaktadır!</div>');$.totalHesaplama();}alertify.error('Sepetinizden ürün kaldırıldı');window.location.reload();}else{$('#PR'+id+' .InfoBasket').fadeIn().delay(1000).fadeOut();$('.futuredBPane .InfoBasket').fadeIn().delay(1000).fadeOut();}$.totalHesaplama();},error:function(){}});}
+$.totalHesaplama=function(){var obj=$('#SepetTable tbody tr');var totalToplam=0;var OnToplam=0;var toplamindirim=0;$.each(obj,function(key,value){var a=parseFloat($('#SepetTable tbody tr:eq('+key+') td:nth-child(4) strong span').html());var b=parseFloat($('#SepetTable tbody tr:eq('+key+') td:nth-child(3) strong span').html());var adeta=parseFloat($('#SepetTable tbody tr:eq('+key+') .urunadet').val());$('#SepetTable tbody tr:eq('+key+') td:nth-child(4) strong span').html(parseFloat((b*adeta)).toFixed(2));OnToplam=OnToplam+(b*adeta);totalToplam=totalToplam+(a*adeta);var indirimsb=parseFloat($('#SepetTable tbody tr:eq('+key+') .indirim').val());var id=$('#SepetTable tbody tr:eq('+key+')').attr("id");toplamindirim=toplamindirim+(adeta*indirimsb);});$('#onToplam h5 strong span').html(OnToplam.toFixed(2));$('#indirimTutar h5 strong span').html(parseFloat(toplamindirim).toFixed(2));var onTutar=parseFloat($('#onToplam h5 strong span').html()).toFixed(2);var indirim=0;var OdenecekToplam=parseFloat(onTutar-indirim).toFixed(2);if($(".totalsProduct tr:eq(1) th span").html())OdenecekToplam=parseFloat(OdenecekToplam-$(".totalsProduct tr:eq(1) th span").html());$('#sepetBakiyeYukle').attr("href","profil/bakiye-yukle?tutar="+OdenecekToplam);$('#totalToplam h5 strong span').html(OdenecekToplam);}
+$.yenihesaplama=function(adet,id){var adet=$('#'+id+' .urunadet').val();var fiyat=$('#'+id+' td:nth-child(3) strong span').html();$('#'+id+' td:nth-child(4) strong span').html(parseFloat(fiyat*adet).toFixed(2));$.totalHesaplama();}
+$.chng=function(st,Did){console.log($('#'+Did+' .urunadet').val());if($('#'+Did+' .urunadet').val()>=1){var adets=$('#'+Did+' .urunadet').val();if(st==1){$('#'+Did+' .urunadet').val(parseInt(adets)+1);}else{if(adets>1)$('#'+Did+' .urunadet').val(parseInt($('#'+Did+' .urunadet').val())-1);}$.yenihesaplama($('#'+Did+' .urunadet').val(),Did);}}
+$.totalHesaplama();$('.urunadet').on("keyup",function(){var adet=parseInt($(this).val()).toFixed(2);var id=$(this).parent().parent().parent().attr("id");if(adet>1){$.yenihesaplama(adet,id);}else{$(this).val(1);$.yenihesaplama(1,id);}});$.HemenAl=function(id,adet){$('.futuredBBotForm').removeClass('hidden');$('#tradeurl').attr("disabled",false);var ddata=$('#extraInputs').serialize();if(ddata!="")ddata+="&";ddata+="&HemenAlUrun="+id+"&adet="+adet;var formonay=0;if($('#extraInputs input').length<1){formonay=1;}for(var i=0;i<$('#extraInputs input').length;i++){if($('#extraInputs input').eq(i).val()==""){$('#extraInputs').addClass('has-error');$('#extraInputs input').eq(i).attr('placeholder','Lütfen İstenilen Bilgileri Eksiksiz Giriniz!');formonay=0;}else{$('#extraInputs').removeClass('has-error');formonay=1;}}if(formonay==1){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=12',data:ddata+"&type=productBuy@HemenAlUrun",beforeSend:function(){$('#hemenalBut').prop("disabled",true);},success:function(cevap){switch(cevap){case"1":location.href="https://www.oyunfor.com/profil/aldiklarim?islem=ok";break;case"-4":{$('#tradeurl').attr("disabled",true);alertify.error("Satın Almak İçin Bakiyeniz Yetersiz!!!");$('#futuredBotButtonDiv').html('<a class="btn btn-danger btn-lg" href="https://www.oyunfor.com/profil/bakiye-yukle">Bakiye Yükle</a>');$('.InfoStatus').html('<div class="alert alert-danger"><strong>Satın Almak İçin Bakiyeniz Yetersiz! Lütfen Bakiye Yükleyin</strong></div>').delay(2000).fadeOut();setTimeout(function(){location.href="https://www.oyunfor.com/profil/bakiye-yukle";},2000);}break;case"-5":{$('#tradeurl').attr("disabled",true);$.AddBasketNow(id,adet,1);alertify.error("Satın Almak İçin Giriş Yapmalısınız.");setTimeout(function(){location.href="https://www.oyunfor.com/giris/hizlisatinal";},2000);}break;default:$('#tradeurl').attr("disabled",true);alertify.error("Hata Oluştu!! [kod : "+cevap+"]");break;}},error:function(){$('#tradeurl').attr("disabled",true);alertify.error("Hata Oluştu!!");}});}}
+$('.FaturaBilgisiEkle').on("click",function(){$.ajax({type:'POST',url:'https://www.oyunfor.com/core/ajax.Controller.php?t=5',data:$('form#faturaBilgisi').serialize()+"&type=accountPayment@faturaBilgisiEkle",beforeSend:function(){$(".FaturaBilgisiEkle").button('loading');},success:function(cevap){if(cevap==1){var islem=$("#fatura-degiskeni").data("value");var deger1=$("#fatura-degiskeni").data("urun-id");var deger2=$("#fatura-degiskeni").data("urun-adet");var deger3=$("#fatura-degiskeni").data("urun-deger");$('.InfoP').html('<div style="font-weight: bold" class="alert alert-success text-center">İşlem başarılı, nakit talebiniz alınmıştır. <br>  Talebiniz, çalışma saatleri içerisinde genellikle 1 saate kadar ilgili departmanımızca incelenerek onaylanmaktadır. <br> İlginiz için teşekkür ederiz.</div>').fadeIn().delay(3000).fadeOut();$("#address-modal").modal('hide');if(islem=="HemenAl"){$.HemenAl(deger1,deger2);}else if(islem=="bizeSatModal"){bizeSatModal(deger1,deger2,deger3);}else if(islem=="hemenAlBut"){hemenAlBut(deger1,deger2);}else if(islem=="OrderCompBtn"){OrderCompBtn();}}else if(cevap==2){$('.InfoP').html('<div style="font-weight: bold"  class="alert alert-danger text-center">Hata oluştu, 20 TL Altı Gönderim Yapılamaz!</div>').fadeIn().delay(3000).fadeOut();}else if(cevap==3){$('.InfoP').html('<div style="font-weight: bold"  class="alert alert-danger text-center">Hata oluştu, talep edeceğiniz tutar bakiyenizden fazla olamaz!</div>').fadeIn().delay(3000).fadeOut();}else{$('.InfoP').html('<div style="font-weight: bold"  class="alert alert-danger text-center">Hata oluştu! Bilgileri Yanlış yada eksik girdiniz. Lütfen canlı destek ile iletişime geçiniz</div>').fadeIn().delay(3000).fadeOut();}},error:function(){alertify.error("Hata Oluştu!!");}});return false;});$(document).ready(function(){var offset=250;var duration=300;$(window).scroll(function(){if($(this).scrollTop()>offset){$('.back-to-top').fadeIn(duration);}else{$('.back-to-top').fadeOut(duration);}});$('.back-to-top').click(function(event){event.preventDefault();$('html, body').animate({scrollTop:0},duration);return false;})});</script>
+<script src="https://www.oyunfor.com/asset/js/bootstrap.min.js"></script>
+<script src="https://www.oyunfor.com/asset/form/js/formValidation.min.js"></script>
+<script src="https://www.oyunfor.com/asset/form/js/framework/bootstrap.min.js"></script>
+<a target=_blank href="https://lc.chat/now/6411231/" class=supportMini><img src="https://www.oyunfor.com/asset/img/livesupportk.png" alt="Canlı Destek" data-pagespeed-url-hash=2909137546 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+<script async>function lc_start(){if($(window).width()<960){$('.supportMini').show();}else{window.__lc=window.__lc||{};window.__lc.license=6411231;(function(){var lc=document.createElement('script');lc.type='text/javascript';lc.async=true;lc.src=('https:'==document.location.protocol?'https://':'http://')+'cdn.livechatinc.com/tracking.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(lc,s);})();}}setTimeout(function(){lc_start();},200);</script>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bd5f7b74ad","applicationID":"123897317","transactionName":"ZwRbNUVRV0VTV0EIWV5ObBNeH1BYVlFNT0ZYEQ==","queueTime":0,"applicationTime":77,"atts":"S0NYQw1LREs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<script>console.log("Yukleme Zamani : 0.08");</script><script data-pagespeed-no-defer>//<![CDATA[
+(function(){window.pagespeed=window.pagespeed||{};var f=window.pagespeed;function h(c,a,e,b){this.f=c;this.a=a;this.b=e;this.g=b}f.beaconUrl="";
+function k(c){var a=c.f,e=window.mod_pagespeed_start,b=Number(new Date)-e,a=a+(-1==a.indexOf("?")?"?":"&"),a=a+"ets="+("load"==c.a?"load:":"unload:");if("beforeunload"!=c.a||!window.mod_pagespeed_loaded){a=a+b+("&r"+c.a+"=");if(window.performance){var b=window.performance.timing,d=b.navigationStart,g=b.requestStart,a=a+(b[c.a+"EventStart"]-d),a=a+("&nav="+(b.fetchStart-d)),a=a+("&dns="+(b.domainLookupEnd-b.domainLookupStart)),a=a+("&connect="+(b.connectEnd-b.connectStart)),a=a+("&req_start="+(g-d))+
+("&ttfb="+(b.responseStart-g)),a=a+("&dwld="+(b.responseEnd-b.responseStart)),a=a+("&dom_c="+(b.domContentLoadedEventStart-d));window.performance.navigation&&(a+="&nt="+window.performance.navigation.type);d=-1;b.msFirstPaint?d=b.msFirstPaint:window.chrome&&window.chrome.loadTimes&&(d=Math.floor(1E3*window.chrome.loadTimes().firstPaintTime));d-=g;0<=d&&(a+="&fp="+d)}else a+=b;f.getResourceTimingData&&window.parent==window&&(a+=f.getResourceTimingData());a+=window.parent!=window?"&ifr=1":"&ifr=0";"load"==
+c.a&&(window.mod_pagespeed_loaded=!0,(b=window.mod_pagespeed_num_resources_prefetched)&&(a+="&nrp="+b),(b=window.mod_pagespeed_prefetch_start)&&(a+="&htmlAt="+(e-b)));f.criticalCss&&(e=f.criticalCss,a+="&ccis="+e.total_critical_inlined_size+"&cces="+e.total_original_external_size+"&ccos="+e.total_overhead_size+"&ccrl="+e.num_replaced_links+"&ccul="+e.num_unreplaced_links);a+="&dpr="+window.devicePixelRatio;""!=c.b&&(a+=c.b);document.referrer&&(a+="&ref="+encodeURIComponent(document.referrer));a+=
+"&url="+encodeURIComponent(c.g);f.beaconUrl=a;(new Image).src=a}}f.c=function(c,a,e,b){var d=new h(c,a,e,b);window.addEventListener?window.addEventListener(a,function(){k(d)},!1):window.attachEvent("on"+a,function(){k(d)})};f.addInstrumentationInit=f.c;})();
+
+pagespeed.addInstrumentationInit('/mod_pagespeed_beacon', 'load', '', 'https://www.oyunfor.com/blizzard-oyunlari/wow-game-card/blizzard-wow-battle-chest-cd-key');
+//]]></script>

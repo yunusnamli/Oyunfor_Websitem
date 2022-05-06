@@ -1,0 +1,1361 @@
+﻿div
+{
+	position: relative;
+	margin:0px;
+	padding:0px;
+}
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color: #EFEFEF;
+    font-family: 'Roboto',sans-serif;
+}
+/***************Üst Divi İçin Ayarlar*******************/
+div.ust
+{
+  width: 100%;
+  height: 30px;
+  background-color: #eeeeee;
+
+}
+
+div.kilit_yazi
+{
+width: 515px;
+height: 30px;
+margin-left: 100px;
+float: left;
+    top: -1px;
+    left: 0px;
+}
+
+div.kilit
+{
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+div.kilit img
+{
+	width: 30px;
+	height: 30px;	
+}
+div.yazi 
+{
+
+width: 485px;
+height: 30px;
+font-size: 13px;
+line-height: 30px;
+color: grey;
+float: left;
+
+}
+/*******************Üst Divinde ki Linkler İçin Ayarlar****************/
+div.link
+{
+  width: 300px;
+  height: 30px;
+  float: left;
+ left: 350px;
+
+}
+div.linkbir
+{
+width: 40px;
+height: 30px;
+float: left;
+}
+div.linkbir a
+{
+display: block;
+width: 40px;
+height: 30px;
+
+}
+div.linkbir img
+{
+width: 40px;
+height: 30px;
+
+}
+div.yazim
+{
+ width: 100px;
+ height: 30px;
+ float: left;
+ line-height: 30px;
+ margin-left: 4px;
+
+}
+div.yazim a
+{
+text-decoration: none;
+color:  grey;
+}
+div.linkiki
+{
+width: 50px;
+height: 30px;
+float: left;
+margin-left: 10px;
+}
+div.linkiki a
+{
+display: block;
+width: 50px;
+height: 30px;
+
+} 
+div.linkiki img
+{
+width: 50px;
+height: 30px;
+}
+div.yazimiki
+{
+width: 100px;
+ height: 30px;
+ float: left;
+ line-height: 30px;
+ margin-left: -6px;
+}
+div.yazimiki a
+{
+text-decoration: none;
+color:  grey;
+}
+div.yazimiki a:hover
+{
+	color: purple;
+}
+div.yazim a:hover
+{
+	color: red;
+}
+/******************* Header Ayarları *********************/
+div.header
+{
+
+width: 100%;
+height: 77px;
+background-color: white;
+}
+
+div.logo
+{
+	width: 206px;
+	height: 77px;
+	left: 135px;
+	float: left;
+	
+	
+}
+div.logo img
+{
+	width: 206px;
+	height: 43px;
+	margin-top: 15px;
+}	
+div.Arama
+{
+	width: 450px;
+	height: 43px;	
+	float: left;
+	left: 190px;
+	top: 15px;
+	
+
+}
+.Kutu
+{
+	width: 395px;
+	height: 43px;
+	line-height: 43px;
+	border:2px solid grey;
+	padding-left: 10px;
+	position: relative;
+	float: left;
+	font-size: 15px;
+	border-bottom-left-radius: 7px;	
+	border-top-left-radius: 7px;
+	outline:none;
+	
+}
+.buton
+{
+	width: 55px;
+	height: 43px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	position: relative;
+	float: left;
+}
+.buton img 
+{
+width: 21.5px;
+height: 21px;
+
+}
+.Kutu:hover 
+{
+	border:2px solid  darkorange;
+    color: blue;
+}
+.Kutu:hover .buton
+{
+	background-color: orange;
+}
+/* linear-gradient(to bottom, #FBA448 0%,#FD8607 100%)*/
+
+div.giris_uye
+{
+width: 320px;
+height: 43px;
+left: 480px;
+}
+.giris_yap
+{
+	width: 160px;
+	height: 43px;
+	position: relative;
+	top: -43px;
+    border:2px solid grey;
+	border-bottom-left-radius: 7px;	
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-color: white;
+	border-bottom-right-radius: 7px;
+	color: grey;
+	font-size: 16px;
+	font-weight: bolder;
+}
+.buton_uyeol
+{
+	width: 160px;
+	height: 43px;
+	position: absolute;
+	top: -0px;
+	left: 160px;
+    margin-left: 25px;
+   background-color: white;
+     border:2px solid grey;
+    border-bottom-left-radius: 7px;	
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: grey;
+	font-size: 16px;
+	font-weight: bolder;
+
+}
+
+.giris_yap:hover
+{  
+	border:2px solid orange;
+
+color: orange;
+}
+.buton_uyeol:Hover
+{
+	border:2px solid orange;
+	color: orange;
+}
+div.menu
+{
+	width: 1360px;
+	height: 50px;
+	background-color: orange;
+	margin:0 auto;
+	float: left;
+
+}
+div.menuler
+{
+
+  width: 400px;
+  height: 50px;
+  float: left;
+  margin: 0 auto;
+  left: 45px;
+}
+.menum
+{
+margin:0 auto;
+width: 400px;
+height: 50px;
+
+}
+div.menuler li
+{
+ list-style: none;
+display: block;
+width: 120px;
+height: 50px;
+line-height: 50px;
+font-weight: bold;
+font-size: 13px;
+text-align: center;
+border:0.02px solid red;
+float: left;
+margin-left: -1px;
+color:white;
+
+
+}
+.menum li a
+{
+	display: block;
+	width: 120px;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+
+	
+}
+.menum li a:hover
+{
+	transition: 0.01s;
+	background-color: white;
+	color: orange;
+}
+/********* İkinci Menü İçin Ayarlar ********/
+div.dis_menu
+{
+	
+	width: 900px;
+	height: 55px;
+	float: left;
+	top: 8px;
+    left: 203px;
+    
+    
+
+}
+div.ic_menu
+{
+ display: block;
+ width: 148px;
+ height: 50px;
+
+ border:1px solid  grey;
+ float: left;
+}
+div.resim1
+{
+ width: 45px;
+ height: 45px;
+ top: 2px;
+ float: left;
+ margin-left: 3px;
+}
+div.resim1 img
+{
+width: 45px;
+height: 45px;
+
+}
+div.yazi_ic
+{
+  display: block;
+  width: 100px;
+  height: 45px;
+  float: left;
+  top: 5px;
+  left: 4px;
+
+
+}
+div.yazi_ic a
+{
+	display: block;
+	 width: 100px;
+    height: 45px;
+	text-decoration: none;
+	color: black;
+	
+}
+div.yazi_ic a:hover strong
+{
+ 
+ color: darkorange;	
+
+}
+div.resim1 a
+{
+	display: block;
+	width: 45px;
+    height: 45px;
+
+}
+
+
+div.content
+{
+width: 1156px;
+/*Height i kaldırdım */
+/*background-color: green;*/
+
+margin-top: 10px;
+margin-left:95px;
+
+}
+div.menuLeft
+{ 
+	width: 245px;
+    height: auto;
+    float: left;
+    
+
+}
+.Filtreler1Ul
+{
+  list-style-type: disc;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.Filtreler1Ul li
+{
+	display:block;
+	width:245px;
+	border-bottom: 1px solid grey;
+	height:30px;
+	line-height:30px;
+	background-color: white;
+	float: left;
+}
+.btnIleri{
+
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 160px;
+	left: 1100px;
+	opacity: 0.2;
+	transition:1s;
+
+	
+}
+.btnGeri:hover .sol{
+	opacity: 1;
+	transition: 0.7s;
+}
+
+.btnIleri:hover{
+	transition-duration: 0.6s;
+	opacity: 1;
+	
+	
+}
+.btnIleri:hover .sag{
+	opacity: 1;
+	transition: 0.7s;
+}
+.btnIleri img{
+	padding-left: 2px;
+	width: 50px;
+	height: 50px;
+	
+	
+	
+}
+.btnGeri{
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 160px;
+	left: -10px;
+	transition:1s;
+}
+.btnGeri img{
+	width: 50px;
+	height: 50px;
+	margin-left: 14px;
+	opacity: 0.2;
+
+}
+.slider{
+    padding-top:20px;
+	position: relative;
+	width: 1156px;
+	height: 315px;
+	margin:  auto;
+	overflow: hidden;
+}
+.slide{
+	width: 1156px;
+	height: 315px;
+	position: relative;
+	float: left;
+}
+.slide img{
+	width: 1156px;
+	height: 315px;
+	transition: 1s;
+}
+.Filtreler1Ul a
+{
+	display:block;	
+	width:240px;
+	height:30px;
+    color:black; 
+	text-decoration:none;
+	font-weight: bolder;
+	padding-left: 5px;
+
+}
+.Filtreler1Ul a:hover
+{
+	background-color: lightgrey;
+	transition:0.01s;
+	color: orange;
+
+
+}
+div.contentRight
+{
+	float:right;
+	width:901px;
+	height: auto;
+    border:1px solid lightgrey;
+   
+
+}
+div.guncel
+{
+	width: 901px;
+	height: 30px;
+	background-color: black;
+	line-height: 30px;
+   
+
+}
+/*ContentRight Ayarları*/
+div.oyunlar
+{
+    width:210px;
+    height:275px;
+   /* background-color:yellow;*/
+    float:left;
+    top:10px;
+  /* margin-top:10px;*/
+   background-color:#EFEFEF;
+ /* background-color:white;*/
+}
+div.urun_resim
+{
+    width:130px;
+    height:130px;
+    /*background-color:pink;*/
+    margin-left:60px;
+    
+
+}
+div.urun_resim img
+{
+    width:130px;
+    height:130px;
+}
+div.urun_yazi
+{
+    width:158.25px;
+    height:26px;
+    margin-left:60px;
+   margin-top:15px;
+ 
+ 
+      
+}
+.vitrin
+{
+    float:right;
+     width:901px;
+	height: auto;
+
+}
+.oyunlar a
+{
+    text-decoration:none;
+    color:black;
+
+
+}
+.fiyat
+{
+    left:35px;
+
+}
+/* Oyun  divi herşeyi içerisinde barındırıyor*/
+div.Oyun_Detay
+{
+    width:1156px;
+    height:445px;
+  background-color:white;
+    float:left;
+    border:1px solid grey;
+    margin-left:-18px;
+}
+/*Herşey dividir içerisinde resim divi isim_aciklama(oyun_adi,oyun_adi_ic) bulunuyor */
+div.hersey
+{
+    width:1156px;
+    height:300px;
+ /*   background-color:green;*/
+    float:left;
+        
+}
+div.isim_aciklama
+{
+    width:430px;
+    height:265px;
+    position:relative;
+    float:left;
+  /* background-color:mediumpurple;*/
+    margin-top:25px;
+    margin-left:22px;
+}
+div.Oyun_Adi
+{
+    width:400px;
+    height:45px;
+    position:relative;
+    float:left;
+/*  background-color:yellow;*/
+    margin-left:15px;
+    line-height:10px;
+    margin-top:10px;
+  
+}
+div.aciklama
+{
+    width:400px;
+    height:170px;
+    background-color:lightblue;
+    float:left;
+    margin-left:15px;
+    border:1px solid turquoise;
+    border-bottom-left-radius: 15px;	
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;	
+    margin-top:5px;
+   
+
+
+
+}
+.oyun_Resim
+{
+    width:266px;
+    height:264px;
+    float:left;
+    
+   
+}
+div.oyun_Resim_ic
+{
+    width:266px;
+    height:264px;
+    float:left;
+   margin-top:25px;
+    margin-left:20px;
+     border:1px solid grey;
+     background-color:white;
+   
+
+}
+div.oyun_Resim_ic img
+{
+
+    width:266px;
+    height:264px;
+    float:left;
+  
+}
+div.donus
+{
+    width:1158px;
+    height:40px;
+    float:left;
+  margin-left:-18px;
+}
+div.donus a
+{
+
+    text-align:center;
+    line-height:40px;
+    color:grey;
+    text-decoration:none;
+    float:left;
+    font-weight:bold;
+    font-size:17px;
+}
+.Detay
+{
+    width:1156px;
+    height:auto;
+    margin:auto;
+}
+div.tablom
+{
+    width:430px;
+    height:430px;
+    float:right;
+    margin-top:-290px;
+
+}
+/*Footer Ayarları */
+div.footer
+{
+    width:1346px;
+    height:275px;
+    background-color:white;
+    float:left;
+  margin-top:20px;
+  border:1px solid lightgrey;
+  margin-left:-20px;
+    
+}
+div.footer_ic
+{
+    width:1200px;
+    height:275px;
+    background-color:white;
+    margin:0 auto;
+    border-bottom:1px solid grey;
+ 
+}
+div.footers
+{
+    width:300px;
+    height:275px;
+    float:left;
+
+}
+div.footer_yazi
+{
+    width:300px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-size:23px;
+    color:#666;
+    float:left;
+
+
+}
+div.footer_Resim
+{
+    width:300px;
+    height:100px;
+  background-color:white;
+  float:left
+
+}
+div.footer_Resim img
+{
+    margin-left:93px;
+    width:98px;
+    height:91px;
+}
+div.footer_yazi2
+{
+    width:300px;
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    color:#666;
+    text-align:center;
+    float:left;
+    margin-top:-15px;
+
+   
+}
+div.footer_yazi3
+{  
+    width:300px;
+    height:20px;
+    line-height:50px;
+    font-size:16px;
+    color:#666;
+    text-align:center;
+    margin-top:-30px;
+    float:left
+
+}
+/*Alt Footer İçin Ayarlar*/
+div.alt_footer
+{
+    width:1346px;
+    height:60px;
+    float:left;
+}
+div.alt_footer_ic
+{
+     width:1200px;
+     height:60px;
+     margin:0 auto;
+     
+    
+}
+div.alt_resim1
+ {
+   width:160px;
+   height:60px;
+   float:left;
+
+  }
+div.alt_resim1 img
+{
+    width:120px;
+    height:45px;
+    float:left;
+    margin-top:10px;
+}
+div.takip
+{
+    width:265px;
+    height:53px;
+    float:left;
+    margin-left:90px;
+    margin-top:4px;
+
+}
+div.takip_yazi
+{
+    width:259px;
+    height:15px;
+    line-height:15px;
+    font-weight:bolder;
+    font-size:12px;
+    float:left;
+    
+}
+div.kutular
+{
+    width:35px;
+    height:35px;
+    margin-left:2px;
+    float:left;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+div.kutular a 
+{
+    display:block;
+    width:35px;
+    height:5px;
+    float:left;
+
+}
+div.kutular img
+{
+    width:35px;
+    height:35px;
+   border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    opacity:0.7;
+    float:left;
+}
+div.kutular img:hover
+{
+    opacity:1;
+}
+div.iletisim
+{
+    width:160px;
+    height:53px;
+    float:left;
+    margin-top:4px;
+    margin-left:90px;
+}
+div.iletisim_yazi
+{
+    width:160px;
+    height:15px;
+    line-height:15px;
+    font-weight:bolder;
+    font-size:12px;
+    float:left;
+
+}
+div.telefon_Resim
+{
+    width:30px;
+    height:30px;
+    float:left;
+    margin-top:2px;
+
+
+}
+div.telefon_Resim img 
+{
+    width:30px;
+    height:30px;
+}
+div.telefon_yazi
+{
+    width:130px;
+    height:30px;
+    line-height:30px;
+    font-size:18px;
+    font-weight:bold;
+    color:grey;
+    float:left;
+
+}
+/*Link Orta Ayarları*/
+div.orta
+{
+    width:1156px;
+    height:1250px;
+    margin:60px auto;
+    background-color:white;
+    padding:0px;
+}
+div.orta_baslik
+{
+    width:1156px;
+    height:45px;
+    background-color:steelblue;
+
+}
+div.orta_yazi
+{
+    width:1156px;
+    height:45px;
+    line-height:45px;
+}
+
+div.turuncu
+{
+    width:1156px;
+    height:3px;
+    margin:0 auto;
+    background-color:orange;
+
+}
+div.Tüm_Oyunlar/*Oyun Sayısı Eklendikçe Bu width ve div.orta nın hight ını büyüt*/
+{
+    width:1156px;
+    height:1300px;
+    /*background-color:yellow;*/
+}
+div.games
+{
+    width:265px;
+    height:180px;
+    margin-left:10px;
+    margin:10px 10px 10px 10px ;
+    border:1px solid grey;
+    float:left;
+
+
+}
+div.picture
+{
+    width:245.5px;
+    height:130px;
+    margin:10px auto;
+
+}
+
+div.picture img
+{
+    width:245.5px;
+    height:130px;
+
+}
+div.picture img:hover
+{
+   width:265px;
+   height:140px;
+   margin:0px -10px 0px -10px;
+   transition:0.4s;
+}
+
+
+div.write
+{
+    width:266.5px;
+    height:22px;
+    text-align:center;
+    
+}
+/*İndirimli Ürünler İçin Ayarlar*/
+div.Indirim
+{
+    width:1140px;
+    height:50px;
+    background-color:forestgreen;
+    font-size:20px;
+    line-height:50px;
+    color:white;
+    text-align:center;
+    font-weight:100;
+    margin-top:60px;
+    margin-left:-5px;
+
+}
+div.İndirimli_Oyunlar/*Height ını buyult ındırımlı oyun artınca*/
+{
+    width:1140px;
+    height:1420px;
+    background-color:lightgray;
+    margin-left:-5px;
+
+}
+div.oyun_Kutusu
+{
+    width:260px;
+    height:270px;
+    border:1px solid grey;
+    margin:0 10px 10px 10px;
+    top:10px;
+    float:left;
+    background-color:white;
+
+}
+div.kutu_resim
+{
+    width:140px;
+    height:140px;
+   margin:0px auto;
+   top:10px;
+
+}
+div.kutu_resim img
+{
+    width:140px;
+    height:140px;
+
+}
+div.kutu_resim img:hover
+{
+    width:160px;
+    height:150px;
+    margin:0px -10px 0px -10px;
+    transition:0.4s;
+    
+
+}
+
+div.kutu_yazi
+{
+    width:260px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:20px;
+}
+div.kutu_fiyat
+{
+
+     width:260px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:18px;
+    color:grey;
+    font-weight:bold;
+    margin-top:10px;
+}
+div.kutu_fiyatiki
+{
+         width:260px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    font-size:25px;
+    color:black;
+    font-weight:bold;
+    margin-top:10px;
+
+}
+/*Alt Menü Ayarları (Xbox) */
+div.karanlık
+{
+    margin-left:-10px;
+}
+div.donus1
+{
+    float:left;
+    width:170px;
+    height:40px;
+   margin-top:-32px;
+   margin-left:50px;
+
+
+}
+div.donus1 a
+{
+    text-decoration:none;
+    color:grey;
+    font-weight:bold;
+    font-size:18px;
+    line-height:40px;
+      
+}
+div.case
+{
+    width:1011px;
+    height:420px;
+    background-color:white;
+    margin:8px auto;
+    border:1px solid grey;
+
+}
+div.case_ic
+{
+    width:996px;
+    height:418px;
+    background-color:white;
+    
+    margin-left:15px;
+    margin-top:1px;
+
+}
+div.case_yazi
+{
+    width:996px;
+    height:35px;
+    line-height:35px;
+    font-size:17px;
+    font-weight:bold;
+    color:black;
+    float:left;
+
+}
+div.renk
+{
+    width:996px;
+    height:2px;
+    background-color: darkorange;
+    margin-top:-8px;
+ float:left;
+}
+div.case_sol
+{
+    width:456px;
+    height:330px;
+    float:left;
+   border:1px solid grey;
+
+}
+div.case_foto
+{
+    width:436px;
+    height:206px;
+    float:left;
+  /* background-color:pink;*/
+   margin:10px 10px 10px 10px;
+}
+div.case_foto img
+{
+     width:436px;
+    height:206px;
+
+}
+div.case_yaziiki
+{
+    width:436px;
+    height:17px;
+/*  background-color:yellow;*/  
+    line-height:17px;
+    color:black;
+    font-size:15px;
+    font-weight:bold;
+    float:left;
+    margin-left:10px;
+}
+div.case_yaziuc
+{
+     width:436px;
+    height:60px;
+    /*background-color:cornflowerblue;*/ 
+     font-size:12px;
+     float:left;
+     margin-left:10px;
+     
+}
+div.case_yazidort
+{
+        width:206px;
+    height:25px;
+ /*    background-color:yellow;*/
+     font-size:12px;
+     font-weight:bold;
+     float:left;
+     margin-left:10px;
+     
+}
+div.case_yazibes
+{
+        width:206px;
+    height:25px;
+  /*  background-color:blue;*/ 
+     font-size:12px;
+     float:left;
+     font-weight:bold;
+     margin-left:-128px;
+     
+}
+div.case_foto_sag
+{
+    width:510px;
+    height :383px;
+    float:left;
+   margin-left:10px;
+
+}
+div.case_foto_sag img
+{
+     width:520px;
+    height :350px;
+    margin-top:10px;
+
+}
+div.home
+{
+    width:40px;
+    height:40px;
+    margin-top:-35px;
+    margin-left:-215px;
+    float:left;
+}
+div.home img
+{
+    width:40px;
+    height:40px;
+
+}
+/* Üye Giriş*/
+Div.uyeGiris
+{
+    width:500px;
+    height:200px;
+    margin:50px auto;
+    top:55px;
+    margin-left:350px;
+   
+
+
+}
+
+div.uyeKayit
+{
+    width:500px;
+    height:350px;   
+    margin:50px auto;
+    margin-left:348px;
+    top:60px;
+ 
+    
+}
+div.donus2
+{
+        float:left;
+    width:170px;
+    height:40px;
+   margin-top:-32px;
+   margin-left:50px;
+
+
+}
+div.donus2 a
+{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+    line-height:40px;
+      
+}
+div.alt_kisim
+{
+    width:1013px;
+    height:30px;
+   
+    line-height:30px;
+    text-align:center;
+    font-size:17px;
+    font-weight:bold;
+    color:black;
+    margin-left:71px;
+}
+div.alt_oyun_tamami
+{
+    width:1011px;
+    height:330px;
+    border:1px solid grey;
+    margin-left:71px;
+    background-color:white;
+    
+}
+div.alt_oyun
+{
+    width:172px;
+    height:300px;
+    border:1px solid grey;
+    margin:10px 10px 10px 16px;
+    float:left;
+    
+}
+
+div.alt_oyun_yazi
+{
+    width:172px;
+    height:20px;
+  /*  background-color:blue;*/
+    font-size:14px;
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+    line-height:20px;
+}
+div.alt_oyun_yazi_2
+{
+    width:100px;
+    height:20px;
+  /*  background-color:yellow;*/
+    font-size:14px;
+    text-align:center;
+    font-weight:bold;
+    margin-left:36px;
+    margin-top:-2px;
+      
+
+
+}
+div.alt_oyun_resim
+{
+    width:140px;
+    height:195px;
+    margin-left:15px;
+    margin-top:15px;
+}
+div.alt_oyun_resim img
+{
+    width:140px;
+    height:195px;
+    opacity:0.7;
+}
+div.alt_oyun_resim img:hover
+{
+    width:160px;
+    height:210px;
+    transition:0.4s;
+    opacity:1;
+    margin:0px -10px 0px -10px;
+
+}

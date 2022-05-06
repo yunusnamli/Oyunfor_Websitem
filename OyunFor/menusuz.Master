@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menusuz.master.cs" Inherits="OyunFor.menusuz" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Türkiye'nin En Popüler, Oyun Epin Satış, Digital Kod Alışveriş Sitesi</title>
+    <meta name="Yunus Namli" content="yns_nml_99@hotmail.com" />
+   <!-- <meta http-equiv="refresh" content="1"; URL="http://Oyunfor.html/">-->
+    <meta name="abstract" 
+	content="İçerisinde aradığınız her oyunun bulunduğu ve birbirinden özel birçok kampanyanın bulunduğu online oyun alışveriş sitesidir." />
+	<meta name="content-language" content="tr" />
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="Steam Cüzdan, League of Legends,Knight Online,Metin2,Blade and Soul, Warcraft, Cd Key, Google play kodu, Cabal Online, Wolfteam, Uygun Fiyatlarla,Oyun,Anahtar,Online Satış," />
+	<meta name="copyright" content="(c) 2018 Yunus N. (Oyunfor.com) Tüm Hakları Saklıdır." />
+	<meta name="designer" content="Yunus Namlı. Oyunfor Oyun Galerisi" />
+	<meta name="robots" content="none"/>
+    <link href="style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="ust">
+	<div class="kilit_yazi">
+		<div class="kilit"><img src="Images/kilit.png"/></div>
+	<div class="yazi">Türkiye'nin En Popüler, Oyun Epin Satış, Digital Kod Alışveriş Sitesi</div>	
+</div>
+<div class="link">
+	<div class="linkbir"><a href="https://www.youtube.com/c/oyunfor"><img src="Images/youtube.png" /></a></div>
+	<div class="yazim"><a href="https://www.youtube.com/c/oyunfor">Oyunfor Tube</a></div>
+
+<div class="linkiki"><a href="https://www.twitch.tv/oyunfor"><img src="Images/twitch.jpg" /></a></div>
+
+<div class="yazimiki"><a href="https://www.twitch.tv/oyunfor">Oyunfor Tv</a></div>
+</div>
+</div>
+<div class="header">
+	<div class="logo"><a href="Oyunfor.aspx"><img src="Images/oyunfor-logo.png"></a></div>
+ 
+ <div class="Arama">
+<input class="Kutu" type="search" placeholder="Oyun veye ürün ara" name="text">
+<button class="buton"><img src="Images/arama.jpg"></button>
+<!--<div class="giris_uye">
+<a href="uyegiris.aspx"><button class="giris_yap"   type="button" >Giriş Yap</button></a>
+<a href="#"><button class="buton_uyeol" type="button">Üye Ol</button></a></div>-->
+
+</div>
+</div>
+
+<div class="menu">
+	<div class="menuler">
+		<ul class="menum">
+			<li><a href="OyunFor.aspx">ANASAYFA</a></li>
+			<li><a href="Tum_Oyunlar.aspx">TÜM OYUNLAR</a></li>
+			<li><a href="Indirimdekiler.aspx"> İNDİRİMDEKİLER</a></li>
+
+		</ul>
+
+	</div>
+</div>
+
+<div class="Detay">
+	  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     
+        </asp:ContentPlaceHolder>
+</div>
+       
+         <div class="footer">
+            <div class="footer_ic">
+               <div class="footers">
+                   <div class="footer_yazi">Hızlı Teslimat</div>
+                   <div class="footer_Resim"><img src="Images/begen.png" /></div>
+               <div class="footer_yazi2">Alışverişlerinizde En</div>
+                  <div class="footer_yazi3">Hızlı Teslimat</div>
+
+               </div>                
+        
+                      
+               <div class="footers">
+                   <div class="footer_yazi">Güvenli Alışveriş</div>
+                   <div class="footer_Resim"><img src="Images/kilitcik.png" /></div>
+               <div class="footer_yazi2">Tek Tıkla Güvenli </div>
+                  <div class="footer_yazi3">Alışveriş</div>
+
+               </div>                
+                
+                   <div class="footers">
+                   <div class="footer_yazi">Canlı Destek</div>
+                   <div class="footer_Resim"><img src="Images/destek.png" /></div>
+               <div class="footer_yazi2">Sabah 10:00 ile Gece 02:00 </div>
+                       <div class="footer_yazi3"> Arasında Hizmetinizde</div>
+               
+
+               </div>         
+                      
+                   <div class="footers">
+                   <div class="footer_yazi">%100 Memnuniyet</div>
+                   <div class="footer_Resim"><img src="Images/memnuniyet.png" /></div>
+               <div class="footer_yazi2">Müşterilerimize %100 </div>
+                       <div class="footer_yazi3">Memnuniyet Garantisi</div>
+               
+
+               </div>  
+
+</div>
+      </div>
+         
+        <div class="alt_footer">
+            <div class="alt_footer_ic">
+                <div class="alt_resim1"><img src="Images/global.png" /></div>
+                <div class="alt_resim1"><a href="https://play.google.com/store/apps/details?id=com.oyunfor.yazilim3.oyunfor">
+                    <img src="Images/gpstore.png" /></a></div>
+                <div class="alt_resim1"><a href="https://www.oyunfor.com/twitch-donate">
+                    <img src="Images/twitchhh.png" /></a></div>
+
+
+                <div class="takip">
+                    <div class="takip_yazi">Bizi Takip Edin</div>
+                    <div class="kutular"><a href="https://www.facebook.com/OyunFor/"><img src="Images/f.png" /></a></div>
+                    <div class="kutular"><a href="https://twitter.com/oyunfor"><img src="Images/t.png" /></a></div>
+                    <div class="kutular"><a href="https://plus.google.com/+oyunfor"><img src="Images/g.png" /></a></div>
+                    <div class="kutular"><a href="https://www.youtube.com/oyunfor"><img src="Images/y.png" /></a></div>
+                    <div class="kutular"><a href="https://www.linkedin.com/company/oyunfor-%C2%AE-online-games/"><img src="Images/in.png" /></a></div>
+                    <div class="kutular"><a href="https://www.instagram.com/oyunfor/"><img src="Images/i.png" /></a></div>
+                    <div class="kutular"><a href="https://www.twitch.tv/oyunfor"><img src="Images/tw.png" /></a></div>
+
+                </div>
+
+                       <div class="iletisim">
+            <div class="iletisim_yazi">Destek & İletişim</div>
+            <div class="telefon_Resim"><img src="Images/telefon.png"/></div>
+                    <div class="telefon_yazi">0511 149 97 07</div>
+                
+                 </div>
+        
+                 </div>
+
+
+        </div>
+
+    
+    </form>
+</body>
+</html>

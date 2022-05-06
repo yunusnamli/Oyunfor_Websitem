@@ -1,0 +1,82 @@
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\csc.exe
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\vbc.exe
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\OyunFor.dll.config
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\OyunFor.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\OyunFor.pdb
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\obj\Debug\OyunFor.csprojResolveAssemblyReference.cache
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\obj\Debug\OyunFor.dll
+C:\Users\yunusnamlı\Desktop\Almina Giyim_Tekrar\OyunFor\OyunFor\obj\Debug\OyunFor.pdb
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\csc.exe
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\vbc.exe
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\OyunFor.dll.config
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\OyunFor.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\OyunFor.pdb
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.csprojResolveAssemblyReference.cache
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.dll
+C:\Users\yunusnamlı\Desktop\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.pdb
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\csc.exe
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\System.Collections.Immutable.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\System.Reflection.Metadata.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\vbc.exe
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe.config
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\OyunFor.dll.config
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\OyunFor.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\OyunFor.pdb
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.csprojResolveAssemblyReference.cache
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.dll
+D:\YUNUS-HTML-PROJE-BELGELER\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.pdb
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\csc.exe
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\vbc.exe
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\OyunFor.dll.config
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\OyunFor.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\OyunFor.pdb
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.csproj.AssemblyReference.cache
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.csproj.CoreCompileInputs.cache
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.csproj.CopyComplete
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.dll
+C:\Users\yunus\Desktop\Oyun Otomasyonu\Projem\Projem\OyunFor\OyunFor\obj\Debug\OyunFor.pdb
